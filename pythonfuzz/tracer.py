@@ -8,7 +8,7 @@ func_filename = ''
 func_line_no = 0
 
 data = collections.defaultdict(set)
-crashes = collections.defaultdict(set) #added
+crashes = set()
 index = 0
 
 def trace(frame, event, arg):
@@ -42,6 +42,6 @@ def get_crash():
     return index
 
 def set_crash():
-    crashes[func_filename].add((prev_line, func_line_no))
+    crashes.add(data)
     global index
-    index = sum(map(len, crashes.values()))
+    index = len(crashes)

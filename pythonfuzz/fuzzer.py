@@ -42,14 +42,14 @@ def worker(self, child_conn):
         try:
             self._target(buf)
         except Exception as e:
-                tracer.set_crash()
                 if not self._inf_run:
                     logging.exception(e)
                     child_conn.send(e)
                     break
                 else:
-                    if(tracer.get_crash() > self._crashes):
+                    if(tracer.get_coverage() > self._total_coverage):
                         print("New crash ", self._crashes)
+                        self._total_coverage = tracer.get_coverage()
                         self._crashes += 1
                         logging.exception(e)
                         child_conn.send(e)
