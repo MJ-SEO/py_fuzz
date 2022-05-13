@@ -2,6 +2,7 @@ import collections
 from random import random
 import sys
 from time import sleep, time
+import numpy
 
 start = time()
 
@@ -60,26 +61,13 @@ t = end - start
 
 print(end - start)
 
-print(random())
+print(random(), "\n", "=============================")
 
 numbers = ['one', 'two', 'three', 'four', 'five']
 
-for n in numbers:
-    print(n)
 
-print("========================")
+arr = [1, 0, 0, 2, 5]
 
-while True:
-    for i in range(10):
-        for j in range(10):
-            print(i+j)
-            if i + j == 18:
-                break
-        else:
-            continue
-        break
-    else:
-        continue
-    break
+avg = numpy.mean(arr)
 
-    
+print(avg)

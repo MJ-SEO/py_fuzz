@@ -1,0 +1,143 @@
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+DEBUG dirs: ['seed']
+[DEBUG] #0 READ units: 28
+#1 SEED     cov: 0 corp: 28 exec/s: 207 rss: 71.75 MB Unique Crash: 0 total avg exec/s: 207.0
+#2 SEED     cov: 123 corp: 28 exec/s: 732 rss: 71.75390625 MB Unique Crash: 0 total avg exec/s: 469.5
+#3 SEED     cov: 129 corp: 28 exec/s: 948 rss: 71.75390625 MB Unique Crash: 0 total avg exec/s: 629.0
+#4 SEED     cov: 129 corp: 28 exec/s: 933 rss: 71.75390625 MB Unique Crash: 0 total avg exec/s: 705.0
+#5 SEED     cov: 147 corp: 28 exec/s: 958 rss: 71.75390625 MB Unique Crash: 0 total avg exec/s: 755.6
+#6 SEED     cov: 153 corp: 28 exec/s: 587 rss: 71.84375 MB Unique Crash: 0 total avg exec/s: 727.5000000000001
+#7 SEED     cov: 156 corp: 28 exec/s: 934 rss: 71.84375 MB Unique Crash: 0 total avg exec/s: 757.0000000000001
+#8 SEED     cov: 158 corp: 28 exec/s: 1083 rss: 71.84375 MB Unique Crash: 0 total avg exec/s: 797.7500000000001
+#9 SEED     cov: 158 corp: 28 exec/s: 1103 rss: 71.84375 MB Unique Crash: 0 total avg exec/s: 831.6666666666667
+#10 SEED     cov: 160 corp: 28 exec/s: 996 rss: 71.8828125 MB Unique Crash: 0 total avg exec/s: 848.1000000000001
+#11 SEED     cov: 163 corp: 28 exec/s: 970 rss: 71.8828125 MB Unique Crash: 0 total avg exec/s: 859.1818181818182
+#12 SEED     cov: 168 corp: 28 exec/s: 929 rss: 71.8828125 MB Unique Crash: 0 total avg exec/s: 865.0
+#13 SEED     cov: 169 corp: 28 exec/s: 574 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 842.6153846153846
+#14 SEED     cov: 171 corp: 28 exec/s: 740 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 835.2857142857143
+#15 SEED     cov: 171 corp: 28 exec/s: 860 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 836.9333333333334
+#16 SEED     cov: 172 corp: 28 exec/s: 697 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 828.1875
+#17 SEED     cov: 172 corp: 28 exec/s: 644 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 817.3529411764706
+#18 SEED     cov: 172 corp: 28 exec/s: 782 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 815.3888888888889
+#19 SEED     cov: 172 corp: 28 exec/s: 941 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 821.9999999999999
+#20 SEED     cov: 174 corp: 28 exec/s: 806 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 821.1999999999998
+#21 SEED     cov: 179 corp: 28 exec/s: 902 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 825.0476190476188
+#22 SEED     cov: 183 corp: 28 exec/s: 995 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 832.7727272727271
+#23 SEED     cov: 183 corp: 28 exec/s: 777 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 830.3478260869564
+#24 SEED     cov: 188 corp: 28 exec/s: 2344 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 893.4166666666665
+#25 SEED     cov: 190 corp: 28 exec/s: 1054 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 899.8399999999998
+#26 SEED     cov: 191 corp: 28 exec/s: 645 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 890.0384615384613
+#27 SEED     cov: 191 corp: 28 exec/s: 974 rss: 71.890625 MB Unique Crash: 0 total avg exec/s: 893.1481481481478
+#7028 NEW     cov: 193 corp: 29 exec/s: 2288 rss: 71.89453125 MB Unique Crash: 0 total avg exec/s: 942.9642857142853
+#17597 PULSE     cov: 194 corp: 29 exec/s: 2113 rss: 71.89453125 MB Unique Crash: 0 total avg exec/s: 983.3103448275858
+iNPUTS:  bytearray(b'B:888')  refcount: 0 Time:  0.00031447410583496094 Depth:  1
+iNPUTS:  bytearray(b'B:88')  refcount: 0 Time:  0.0003731250762939453 Depth:  2
+iNPUTS:  bytearray(b'w;w.google.com\n')  refcount: 0 Time:  0.0004181861877441406 Depth:  2
+iNPUTS:  bytearray(b'\x00@')  refcount: 0 Time:  0.0006487369537353516 Depth:  1
+iNPUTS:  bytearray(b'w;w.google.#/m\n')  refcount: 4 Time:  0.00011134147644042969 Depth:  4
+iNPUTS:  bytearray(b'\x0e.#omZ;womZ;w.google.#om.google.#omZ')  refcount: 0 Time:  0.0006608963012695312 Depth:  1
+iNPUTS:  bytearray(b'w;w.google/cw;w.googom\n')  refcount: 1 Time:  0.0004360675811767578 Depth:  4
+iNPUTS:  bytearray(b'?K\x00')  refcount: 2 Time:  0.0004792213439941406 Depth:  4
+iNPUTS:  bytearray(b'\x0e.#omZ;w.google.#omZ')  refcount: 0 Time:  0.0005717277526855469 Depth:  1
+iNPUTS:  bytearray(b'w;w.google/com\n')  refcount: 6 Time:  0.0008296966552734375 Depth:  4
+iNPUTS:  bytearray(b'BB:8')  refcount: 2 Time:  0.0005109310150146484 Depth:  3
+iNPUTS:  bytearray(b'\x00;w.google.#om\x00')  refcount: 4 Time:  0.0005395412445068359 Depth:  3
+iNPUTS:  bytearray(b'w;#.google.#om\n')  refcount: 14 Time:  0.0001125335693359375 Depth:  3
+iNPUTS:  bytearray(b'\x00:')  refcount: 0 Time:  0.001287698745727539 Depth:  1
+iNPUTS:  bytearray(b'd\x00:')  refcount: 2 Time:  0.0004127025604248047 Depth:  3
+iNPUTS:  bytearray(b'F8\x00:')  refcount: 0 Time:  0.0005850791931152344 Depth:  2
+iNPUTS:  bytearray(b'\x0e;w.google.#om\n')  refcount: 0 Time:  0.0008699893951416016 Depth:  1
+iNPUTS:  bytearray(b'www.google.com\n')  refcount: 0 Time:  0.0010075569152832031 Depth:  1
+iNPUTS:  bytearray(b'w;w.google.#om\n')  refcount: 0 Time:  0.0008285045623779297 Depth:  1
+iNPUTS:  bytearray(b'\x0e;w.google.#omZ')  refcount: 2 Time:  0.0008900165557861328 Depth:  3
+iNPUTS:  bytearray(b'BcRB::')  refcount: 0 Time:  0.0007786750793457031 Depth:  1
+iNPUTS:  bytearray(b'BB::')  refcount: 4 Time:  0.0006208419799804688 Depth:  3
+iNPUTS:  bytearray(b'B:')  refcount: 8 Time:  0.000438690185546875 Depth:  3
+iNPUTS:  bytearray(b'\x00;w.google.#\x00\x01\x00')  refcount: 0 Time:  0.0007545948028564453 Depth:  1
+iNPUTS:  bytearray(b'\xef')  refcount: 4 Time:  0.00013256072998046875 Depth:  3
+iNPUTS:  bytearray(b'BFj]a:')  refcount: 0 Time:  0.0005075931549072266 Depth:  1
+iNPUTS:  bytearray(b'\x00')  refcount: 15 Time:  0.00014472007751464844 Depth:  3
+iNPUTS:  bytearray(b'\x00')  refcount: 101 Time:  0.0001621246337890625 Depth:  3
+iNPUTS:  bytearray(b'BK:888')  refcount: 0 Time:  0 Depth:  0
+#27841 PULSE     cov: 194 corp: 29 exec/s: 2048 rss: 71.89453125 MB Unique Crash: 0 total avg exec/s: 1018.7999999999996
+iNPUTS:  bytearray(b'B:888')  refcount: 0 Time:  0.00031447410583496094 Depth:  1
+iNPUTS:  bytearray(b'B:88')  refcount: 0 Time:  0.0003731250762939453 Depth:  2
+iNPUTS:  bytearray(b'w;w.google.com\n')  refcount: 0 Time:  0.0004181861877441406 Depth:  2
+iNPUTS:  bytearray(b'\x00@')  refcount: 0 Time:  0.0006487369537353516 Depth:  1
+iNPUTS:  bytearray(b'w;w.google.#/m\n')  refcount: 4 Time:  0.0001494884490966797 Depth:  5
+iNPUTS:  bytearray(b'\x0e.#omZ;womZ;w.google.#om.google.#omZ')  refcount: 0 Time:  0.0006608963012695312 Depth:  1
+iNPUTS:  bytearray(b'w;w.google/cw;w.googom\n')  refcount: 1 Time:  0.0003693103790283203 Depth:  5
+iNPUTS:  bytearray(b'?K\x00')  refcount: 2 Time:  0.0004088878631591797 Depth:  5
+iNPUTS:  bytearray(b'\x0e.#omZ;w.google.#omZ')  refcount: 0 Time:  0.0005717277526855469 Depth:  1
+iNPUTS:  bytearray(b'w;w.google/com\n')  refcount: 6 Time:  0.0008039474487304688 Depth:  5
+iNPUTS:  bytearray(b'BB:8')  refcount: 2 Time:  0.00018405914306640625 Depth:  5
+iNPUTS:  bytearray(b'\x00;w.google.#om\x00')  refcount: 4 Time:  0.0009644031524658203 Depth:  5
+iNPUTS:  bytearray(b'w;#.google.#om\n')  refcount: 14 Time:  0.0005028247833251953 Depth:  4
+iNPUTS:  bytearray(b'\x00:')  refcount: 0 Time:  0.00014328956604003906 Depth:  2
+iNPUTS:  bytearray(b'd\x00:')  refcount: 2 Time:  0.0004220008850097656 Depth:  4
+iNPUTS:  bytearray(b'F8\x00:')  refcount: 0 Time:  0.0005850791931152344 Depth:  2
+iNPUTS:  bytearray(b'\x0e;w.google.#om\n')  refcount: 0 Time:  0.00044727325439453125 Depth:  2
+iNPUTS:  bytearray(b'www.google.com\n')  refcount: 0 Time:  0.00038695335388183594 Depth:  2
+iNPUTS:  bytearray(b'w;w.google.#om\n')  refcount: 0 Time:  0.00028967857360839844 Depth:  2
+iNPUTS:  bytearray(b'\x0e;w.google.#omZ')  refcount: 2 Time:  0.0003497600555419922 Depth:  4
+iNPUTS:  bytearray(b'BcRB::')  refcount: 0 Time:  0.0007786750793457031 Depth:  1
+iNPUTS:  bytearray(b'BB::')  refcount: 4 Time:  0.0004417896270751953 Depth:  4
+iNPUTS:  bytearray(b'B:')  refcount: 8 Time:  0.0006642341613769531 Depth:  4
+iNPUTS:  bytearray(b'\x00;w.google.#\x00\x01\x00')  refcount: 0 Time:  0.0007545948028564453 Depth:  1
+iNPUTS:  bytearray(b'\xef')  refcount: 4 Time:  0.00021505355834960938 Depth:  4
+iNPUTS:  bytearray(b'BFj]a:')  refcount: 0 Time:  0.0005075931549072266 Depth:  1
+iNPUTS:  bytearray(b'\x00')  refcount: 15 Time:  0.0004138946533203125 Depth:  4
+iNPUTS:  bytearray(b'\x00')  refcount: 101 Time:  0.00017833709716796875 Depth:  4
+iNPUTS:  bytearray(b'BK:888')  refcount: 0 Time:  0 Depth:  0
+#33028 NEW     cov: 194 corp: 30 exec/s: 1780 rss: 71.89453125 MB Unique Crash: 0 total avg exec/s: 1043.354838709677
+#42388 PULSE     cov: 195 corp: 30 exec/s: 1871 rss: 71.89453125 MB Unique Crash: 0 total avg exec/s: 1069.2187499999995
+iNPUTS:  bytearray(b'B:888')  refcount: 0 Time:  0.00031447410583496094 Depth:  1
+iNPUTS:  bytearray(b'B:88')  refcount: 0 Time:  0.0003731250762939453 Depth:  2
+iNPUTS:  bytearray(b'w;w.google.com\n')  refcount: 0 Time:  0.0004181861877441406 Depth:  2
+iNPUTS:  bytearray(b'\x00@')  refcount: 0 Time:  0.0006487369537353516 Depth:  1
+iNPUTS:  bytearray(b'w;w.google.#/m\n')  refcount: 4 Time:  0.0008771419525146484 Depth:  7
+iNPUTS:  bytearray(b'\x0e.#omZ;womZ;w.google.#om.google.#omZ')  refcount: 0 Time:  0.00022363662719726562 Depth:  2
+iNPUTS:  bytearray(b'w;w.google/cw;w.googom\n')  refcount: 1 Time:  0.00013756752014160156 Depth:  7
+iNPUTS:  bytearray(b'?K\x00')  refcount: 2 Time:  0.00033926963806152344 Depth:  7
+iNPUTS:  bytearray(b'\x0e.#omZ;w.google.#omZ')  refcount: 0 Time:  0.0004055500030517578 Depth:  2
+iNPUTS:  bytearray(b'w;w.google/com\n')  refcount: 6 Time:  0.0003943443298339844 Depth:  7
+iNPUTS:  bytearray(b'BB:8')  refcount: 2 Time:  0.0004360675811767578 Depth:  6
+iNPUTS:  bytearray(b'\x00;w.google.#om\x00')  refcount: 4 Time:  0.0013823509216308594 Depth:  6
+iNPUTS:  bytearray(b'w;#.google.#om\n')  refcount: 14 Time:  0.0005178451538085938 Depth:  6
+iNPUTS:  bytearray(b'\x00:')  refcount: 0 Time:  0.00014328956604003906 Depth:  2
+iNPUTS:  bytearray(b'd\x00:')  refcount: 2 Time:  0.0004291534423828125 Depth:  6
+iNPUTS:  bytearray(b'F8\x00:')  refcount: 0 Time:  0.0005850791931152344 Depth:  2
+iNPUTS:  bytearray(b'\x0e;w.google.#om\n')  refcount: 0 Time:  0.00044727325439453125 Depth:  2
+iNPUTS:  bytearray(b'www.google.com\n')  refcount: 0 Time:  0.00038695335388183594 Depth:  2
+iNPUTS:  bytearray(b'w;w.google.#om\n')  refcount: 0 Time:  0.00028967857360839844 Depth:  2
+iNPUTS:  bytearray(b'\x0e;w.google.#omZ')  refcount: 2 Time:  0.0009701251983642578 Depth:  6
+iNPUTS:  bytearray(b'BcRB::')  refcount: 0 Time:  0.0007786750793457031 Depth:  1
+iNPUTS:  bytearray(b'BB::')  refcount: 4 Time:  0.0005972385406494141 Depth:  6
+iNPUTS:  bytearray(b'B:')  refcount: 8 Time:  0.0005619525909423828 Depth:  6
+iNPUTS:  bytearray(b'\x00;w.google.#\x00\x01\x00')  refcount: 0 Time:  0.0007545948028564453 Depth:  1
+iNPUTS:  bytearray(b'\xef')  refcount: 4 Time:  0.00015234947204589844 Depth:  6
+iNPUTS:  bytearray(b'BFj]a:')  refcount: 0 Time:  0.0005075931549072266 Depth:  1
+iNPUTS:  bytearray(b'\x00')  refcount: 15 Time:  0.0006582736968994141 Depth:  6
+iNPUTS:  bytearray(b'\x00')  refcount: 101 Time:  0.0007028579711914062 Depth:  6
+iNPUTS:  bytearray(b'BK:888')  refcount: 0 Time:  0.0007121562957763672 Depth:  1
+iNPUTS:  bytearray(b'\x0e.#omZ;womZ;w.google.#om.goomZ;womZ;gle.#omZ')  refcount: 0 Time:  0 Depth:  0

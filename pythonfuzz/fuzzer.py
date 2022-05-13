@@ -9,6 +9,7 @@ import logging
 import functools
 import multiprocessing as mp
 import signal
+import statistics
 import tempfile
 from contextlib import contextmanager
 from multiprocessing import Manager
@@ -100,7 +101,9 @@ class Fuzzer(object):
                  close_fd_mask=0,
                  runs=-1,
                  dict_path=None,
-				 inf_run=False):
+				 inf_run=False,
+                 sched=None,
+                 ):
         self._target = target
         self._dirs = [] if dirs is None else dirs
         self._exact_artifact_path = exact_artifact_path
@@ -124,6 +127,7 @@ class Fuzzer(object):
         self._n_time = 0
         self._avg_time = 0
         self._tot_time = 0
+        self._sched = sched
 
     def log_stats(self, log_type):
         rss = (psutil.Process(self._p.pid).memory_info().rss + psutil.Process(os.getpid()).memory_info().rss) / 1024 / 1024
@@ -180,9 +184,72 @@ class Fuzzer(object):
         self._p.join()
         sys.exit(exit_code)
 
-    def calculate_score(self, score):
-        score = score * uniform(1.1, 1.2)
-        return score
+    def calculate_score(self, input_idx, sched):
+        HAVOC_CYCLE = 256
+        avg_exec_time = statistics.mean(self._corpus._run_time)
+        avg_coveage = 10 # coverage
+        perf_score = 100
+        
+        curr_exec_time = self._corpus._run_time[input_idx]
+        curr_coverage = 10 
+
+        # Adjust score based on execution speed of this input, compared to the global average.
+        # Fast inpust are less expensive to fuzz
+        if curr_exec_time * 0.1 > avg_exec_time:
+            perf_score = 10
+        elif curr_exec_time * 0.25 > avg_exec_time:
+            perf_score = 25 
+        elif curr_exec_time* 0.5 > avg_exec_time:
+            perf_score = 50
+        elif curr_exec_time * 0.75 > avg_exec_time:
+            perf_score = 70
+        elif curr_exec_time * 4 < avg_exec_time:
+            perf_score = 300
+        elif curr_exec_time * 3 < avg_exec_time:
+            perf_score = 200
+        elif curr_exec_time * 2 < avg_exec_time:
+            perf_score = 150
+
+        # Adjust score based pn bitmap size. 
+        # The working theory is that better coverate translates to better targets 
+        if curr_coverage * 0.3 > avg_coveage:
+            perf_score *= 3
+        elif curr_coverage * 0.5 > avg_coveage:
+            perf_score *= 2 
+        elif curr_coverage * 0.75 > avg_coveage:
+            perf_score *= 1.5
+        elif curr_coverage * 3 < avg_coveage:
+            perf_score * 0.25
+        elif curr_coverage * 2 < avg_coveage:
+            perf_score = 0.5
+        elif curr_coverage * 1.5 < avg_coveage:
+            perf_score = 0.75
+
+        # Adjust score based on handicap
+        # TODO Latecomers are allowed to run for a bit longer
+        
+
+        ## TODO Chage depth to level
+        if self._corpus._depth[input_idx] < 3:
+            pass
+        elif self._corpus._depth[input_idx] < 7:
+            perf_score *= 2
+        elif self._corpus._depth[input_idx] < 13:
+            perf_score *= 3
+        elif self._corpus._depth[input_idx] < 24:
+            perf_score *= 4
+        else:
+            perf_score *= 5         
+        
+
+        print("DEBUG perf_score: ", perf_score)
+
+        perf_score = HAVOC_CYCLE * perf_score / 100 / 1 # TODO havoc div
+
+        return perf_score
+
+# afl->stage_max = (doing_det ? HAVOC_CYCLES_INIT : HAVOC_CYCLES) *
+#             perf_score / afl->havoc_div / 100;
 
     def start(self):
         logging.info("[DEBUG] #0 READ units: {}".format(self._corpus.length))
@@ -191,9 +258,7 @@ class Fuzzer(object):
         self._p.start()
 
         while True:
-
             buf = self._corpus.generate_input()
-#            score = self.calculate_score(buf)
             if not self._corpus._seed_run_finished:
                 self.fuzz_loop(buf, parent_conn)
                 if self._corpus._seed_idx + 1 >= len(self._corpus._inputs) : 
@@ -201,14 +266,15 @@ class Fuzzer(object):
             else :
 #                print("Depth, idx: ", self._corpus._depth[self._corpus._seed_idx], self._corpus._seed_idx)
                 if self._corpus._depth[self._corpus._seed_idx] == 1:
-#                    print("DETER")
                     for buf_idx in range(len(buf)):
                         for m in range(self._mutation._deterministics):
                             mutated_buf = self._mutation.mutate_det(buf, buf_idx, m)
                             self.fuzz_loop(mutated_buf, parent_conn)
                 else:
-                    score = 100 * uniform(1, 30)
- #                   print("HAVOC", score)
+                    if self._sched:
+                        score = self.calculate_score(self._corpus._seed_idx, self._sched)
+                    else:
+                        score = 500
                     for i in range(int(score)):
                         havoc_buf = self._mutation.mutate_havoc(buf, self._dict_path)
                         self.fuzz_loop(havoc_buf, parent_conn)
@@ -248,6 +314,8 @@ class Fuzzer(object):
         self._executions_in_sample += 1
         rss = 0
         idx = self._corpus._seed_idx
+        self._corpus._run_time[idx] = end_time - start_time
+
         if self._corpus._seed_run_finished :
             if self._corpus.Isinteresting(self._run_coverage):
                 idx = self._corpus.put(buf)
@@ -257,6 +325,11 @@ class Fuzzer(object):
             else:
                 if (time.time() - self._last_sample_time) > SAMPLING_WINDOW:
                     rss = self.log_stats('PULSE')
+                    for i, inp in enumerate(self._corpus._inputs):
+                        print("iNPUTS: " , inp, " refcount:", self._corpus._is_favored[i], "Time: ", self._corpus._run_time[i]
+                        , "Depth: ", self._corpus._depth[i])
+
+
         else:
             self._corpus._add_to_total_coverage(self._run_coverage)
             self._corpus.UpdatedFavored(buf, idx, end_time - start_time, self._run_coverage)

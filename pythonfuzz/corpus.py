@@ -31,7 +31,12 @@ class Corpus(object):
         self._run_time = [] # running time of inputs
         self._mutated = [] # Mutated or not
         self._depth = [] # input depth of mutate
-        self._is_favored = [] # favored or not
+        self._is_favored = [] 
+        
+        self._level = [] # level of input
+        self._power = [] # power of input for sechduling
+        self._handicap = [] # ?
+        self._queue_cycles = 0 # queue cycle
         
         self._favored = {} 
         self._total_path = set()
@@ -166,5 +171,6 @@ class Corpus(object):
                 self._seed_idx = 0
             buf_idx = self._seed_idx
             buf = self._inputs[buf_idx]
+            self._depth[buf_idx] += 1   # Index 위치....
             return buf
             
