@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<test>
+    <Users>
+        <fun25>
+            <limits>
+                <total>0KiB</total>
+                <kbps>0</kbps>
+                <rps>0</rps>
+                <connections>0</connections>
+            </limits>
+            <usages>
+                <total>16738211KiB</total>
+                <kbps>237.15</kbps>
+                <rps>5.40</rps>
+                <connections>0</connections>
+            </usages>
+            <time_to_refresh>never</time_to_refresh>
+            <limit_exceeded_URL>none</limit_exceeded_URL>
+        </fun25>
+    </Users>
+</test>

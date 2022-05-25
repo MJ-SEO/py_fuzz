@@ -1,0 +1,60 @@
+Passing in value allows computing a running checksum over the concatenation of several inputs. The algorithm is not cryptographically strong, and should not be used for authentication or digital signatures. Since the algorithm is designed for use as a checksum algorithm, it is not suitable for use as a general hash algorithm.
+
+Changed in version 3.0: The result is always unsigned. To generate the same numeric value when using Python 2 or earlier, use crc32(data) & 0xffffffff.
+
+zlib.decompress(data, /, wbits=MAX_WBITS, bufsize=DEF_BUF_SIZE)
+Decompresses the bytes in data, returning a bytes object containing the uncompressed data. The wbits parameter depends on the format of data, and is discussed further below. If bufsize is given, it is used as the initial size of the output buffer. Raises the error exception if any error occurs.
+
+The wbits parameter controls the size of the history buffer (or “window size”), and what header and trailer format is expected. It is similar to the parameter for compressobj(), but accepts more ranges of values:
+
++8 to +15: The base-two logarithm of the window size. The input must include a zlib header and trailer.
+
+0: Automatically determine the window size from the zlib header. Only supported since zlib 1.2.3.5.
+
+−8 to −15: Uses the absolute value of wbits as the window size logarithm. The input must be a raw stream with no header or trailer.
+
++24 to +31 = 16 + (8 to 15): Uses the low 4 bits of the value as the window size logarithm. The input must include a gzip header and trailer.
+
++40 to +47 = 32 + (8 to 15): Uses the low 4 bits of the value as the window size logarithm, and automatically accepts either the zlib or gzip format.
+
+When decompressing a stream, the window size must not be smaller than the size originally used to compress the stream; using a too-small value may result in an error exception. The default wbits value corresponds to the largest window size and requires a zlib header and trailer to be included.
+
+bufsize is the initial size of the buffer used to hold decompressed data. If more space is required, the buffer size will be increased as needed, so you don’t have to get this value exactly right; tuning it will only save a few calls to malloc().
+
+Changed in version 3.6: wbits and bufsize can be used as keyword arguments.
+
+zlib.decompressobj(wbits=MAX_WBITS[, zdict])
+Returns a decompression object, to be used for decompressing data streams that won’t fit into memory at once.
+
+The wbits parameter controls the size of the history buffer (or the “window size”), and what header and trailer format is expected. It has the same meaning as described for decompress().
+
+The zdict parameter specifies a predefined compression dictionary. If provided, this must be the same dictionary as was used by the compressor that produced the data that is to be decompressed.
+
+Note If zdict is a mutable object (such as a bytearray), you must not modify its contents between the call to decompressobj() and the first call to the decompressor’s decompress() method.
+Changed in version 3.3: Added the zdict parameter.
+
+Compression objects support the following methods:
+
+Compress.compress(data)
+Compress data, returning a bytes object containing compressed data for at least part of the data in data. This data should be concatenated to the output produced by any preceding calls to the compress() method. Some input may be kept in internal buffers for later processing.
+
+Compress.flush([mode])
+All pending input is processed, and a bytes object containing the remaining compressed output is returned. mode can be selected from the constants Z_NO_FLUSH, Z_PARTIAL_FLUSH, Z_SYNC_FLUSH, Z_FULL_FLUSH, Z_BLOCK (zlib 1.2.3.4), or Z_FINISH, defaulting to Z_FINISH. Except Z_FINISH, all constants allow compressing further bytestrings of data, while Z_FINISH finishes the compressed stream and prevents compressing any more data. After calling flush() with mode set to Z_FINISH, the compress() method cannot be called again; the only realistic action is to delete the object.
+
+Compress.copy()
+Returns a copy of the compression object. This can be used to efficiently compress a set of data that share a common initial prefix.
+
+Changed in version 3.8: Added copy.copy() and copy.deepcopy() support to compression objects.
+
+Decompression objects support the following methods and attributes:
+
+Decompress.unused_data
+A bytes object which contains any bytes past the end of the compressed data. That is, this remains b"" until the last byte that contains compression data is available. If the whole bytestring turned out to contain compressed data, this is b"", an empty bytes object.
+
+Decompress.unconsumed_tail
+A bytes object that contains any data that was not consumed by the last decompress() call because it exceeded the limit for the uncompressed data buffer. This data has not yet been seen by the zlib machinery, so you must feed it (possibly with further data concatenated to it) back to a subsequent decompress() method call in order to get correct output.
+
+Decompress.eof
+A boolean indicating whether the end of the compressed data stream has been reached.
+
+This makes it possible to distinguish between a properly-formed compressed stream, and an incomplete or

@@ -1,0 +1,67 @@
+On branch rollback
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../../purl/fuzz.py
+	modified:   ../../purl/reset.sh
+	modified:   ../../../pythonfuzz/fuzzer.py
+	modified:   ../../../pythonfuzz/tracer.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../debug
+	../../csv/csv.dict
+	../../csv/log.csv
+	../../furl/
+	../../fuzzit/log.csv
+	../../fuzzit/seed/be884c5ffc8be5775af514a21993fe7704e59fb1b6fd42caaa81c58bb7da0154
+	../../fuzzit/seed/de98692ac8e4bbeea0fd8ba2414998f3369a144cca30acfecb358b2b33626359
+	../../fuzzit2/
+	../../htmlparser/debug
+	../../htmlparser/fuzz_in.py
+	../../htmlparser/log.csv
+	../../htmlparser/log1.csv
+	../../htmlparser/log_no.csv
+	../../htmlparser/log_with_seed.csv
+	../../htmlparser/seed/0f1a4ed8deb634d561bf4ec96130a94c44144fdcde4443b3bd0a8ff1d123a7c5
+	../../htmlparser/seed/0fd69e0f5121626e45e8615b073368a1135b294905b2b04450514e81975338db
+	../../htmlparser/seed/174f9d3c35fe4c6657d195af7e80f33ed0796d0324c43000c3793d4fb94b6038
+	../../htmlparser/seed/226fa9800d2f33ecab15fdb1236b9b0428debf28275e848731ec3f5f8c6b2951
+	../../htmlparser/seed/29f6ea4a28dc2b50c4f151d29dd708e6a371f13dc59951a3351d200131abe567
+	../../htmlparser/seed/2fa486fa4f9e597fd57ac4bdfc37ac8dc0c7eb9b5d37457e388c12da7e5518df
+	../../htmlparser/seed/47b1d010ccb8428cbbc6580c88b4b24e8a55004152cf1fb963b50ea833dbccc1
+	../../htmlparser/seed/4edb3c0d8631bd74b77f9f9de39ea903f063a04f05182ec1e24545ecf8416bfa
+	../../htmlparser/seed/527298a9bd44aa4b0cefa8c266b65c48025e90b94707848fa68b3b25759a9c5c
+	../../htmlparser/seed/52cad7158c9001f8fe117138f086a596ff28b8c38045fa4bb732c0c43158e5a1
+	../../htmlparser/seed/53e46b01a28edd8c834|[†æ‡¶528ce1962dd83c6273333665e37e5d8fea98e
+	../../htmlparser/seed/56684693fdd071cfde420316781fc16a1cbb829294b2cf28fee34ad6956c59d7
+	../../htmlparser/seed/56e67ac6fd17358635d25c5935a748e5d6c45316d11a254c9980ad83126fae95
+	../../htmlparser/seed/590988d21f7f396f227f93351a4cbd4a8734faebc816df8582763a97aa0afc3f
+	../../htmlparser/seed/7513c0fa1567949ad8ef5e8fa389fe8ddc6dea1d55f045804b236cb0bedd9644
+	../../htmlparser/seed/81472b697ca3f36c69cd8920e9a0d9b2387d45c4a7cdbc4e6bd46bc0903c79ef
+	../../htmlparser/seed/83d773f3c0eb8a2ffe9431eadca91c92dfec02d1ba2cb989c18b476b024fb9af
+	../../htmlparser/seed/87551b98f41db4a037aba9ca65831810c308bf5e3af0500b6f74b6c6129525c4
+	../../htmlparser/seed/9f770faca3c4822bdfa44e75cca3e6de4e540c530b0e48f74b63089c60d9a23b
+	../../htmlparser/seed/aa06581a0b7bbdc24d6cbdf074140e4909686c3145da4e61c579ee05d23c3932
+	../../htmlparser/seed/b203c946057da7aeec6be094edf05c1e54730376da114cf0718cc94975335985
+	../../htmlparser/seed/b8e59410ff6b2a7af55d5a536301af3103d5d0db431b4e6fddb5545ecbef76a4
+	../../htmlparser/seed/bd8adcd45d7b5310aeadeb4863d6dd0f125506b67a819e67ed4737832074ca8d
+	../../htmlparser/seed/c7c73917d4289d866850986582ca187735a7afbd40d5898a436434378e0248bd
+	../../htmlparser/seed/ca0118a6357793a8d3c213b6c658e9338644b651c1ee885ccc7f5a134d2b927d
+	../../htmlparser/seed/d5b768883004091a83dfa37a6bf38e0d6521fe851a7aef20fb70f5b9231215cc
+	../../htmlparser/seed/d79bb8dec4046980ee867411bef6cf1d0bbccb36805282eb9289c6da2ab9f04c
+	../../htmlparser/seed/de1a5a957466d965176e7fa5d7f18c68a42ab5925e4d02aaf431c5ad515af4c8
+	../../htmlparser/seed/dffeed40b64680d3d7327fcd899e49fa3d65bdaab019cba0014bbac13eaf690f
+	../../htmlparser/seed/e92b4283938c114dc293c19c1e753eb4449e6da978407a85a0d3696d63d782a8
+	../../htmlparser/seed/f29edd35351842ce40d2c2076c4981c5de4ec3622a933ecfe5468bdae919c535
+	../../htmlparser/seed/f2e87d01a62b46ecf1a226f142811be85abb50710e61cd1d6ff7bd1bbee1a734
+	../../htmlparser/seed/f825b0730e69e55bd36ecc1cf8bf6f7a7c81250604a5eeb9170d73a2726d2bec
+	../../htmlparser/seed/fc6b71506e6c8fcbe1d09bd44c3d52b6b38f1f1a70bf99b855e57adb9b95cef1
+	../../htmlparser/seeds/
+	../../isort/
+	../
+	../../purl/debug
+	../../pybuilder/
+	../../tinytag/
+
+no changes added to commit (use "git add" and/or "git commit -a")
