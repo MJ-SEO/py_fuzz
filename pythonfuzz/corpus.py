@@ -223,8 +223,8 @@ class Corpus(object):
             iter = 100 * self._energy[idx]
             if iter < 12:
                 iter = 12
-            elif iter > 32000:
-                iter = 32000
+            elif iter > 16000:
+                iter = 16000
 
             print("Iter, Energy: ", iter, " ", self._energy[idx])
             return iter

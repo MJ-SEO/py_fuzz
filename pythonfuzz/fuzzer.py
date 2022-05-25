@@ -79,6 +79,7 @@ def worker(self, child_conn):
                 _log_hangs(self, buf)
                 sys.settrace(None)
                 child_conn.send(None)
+                continue
         except Exception as e:
             if not self._inf_run:
                 logging.exception(e)
@@ -208,7 +209,7 @@ class Fuzzer(object):
                     if self._sched > 0: # AFL
                         score = self._corpus.calculate_score(idx, self._sched)
                     else:
-                        score = 1000
+                        score = 512
                     for i in range(int(score)):
                         havoc_buf = self._mutation.mutate_havoc(buf, self._corpus)
                         self.fuzz_loop(havoc_buf, parent_conn)
