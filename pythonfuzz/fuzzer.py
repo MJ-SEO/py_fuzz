@@ -256,10 +256,6 @@ class Fuzzer(object):
                 self._corpus._energy[idx] *= 0.9991
                 if (time.time() - self._last_sample_time) > SAMPLING_WINDOW:
                     rss = self.log_stats('PULSE')
-                    with open("test.csv", "a") as log_file:
-                        for edge in self._corpus._total_path:
-                            tempstr = str(edge).split(",")
-                            log_file.write("%s:%s\n" % (tempstr[0], tempstr[1]))
         else:
             self._corpus._add_to_total_coverage(self._run_coverage)
             self._corpus.update_favored(buf, idx, end_time - start_time, self._run_coverage)

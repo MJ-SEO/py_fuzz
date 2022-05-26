@@ -75,9 +75,6 @@ def get_coverage():
     data = {} 
     if prev_branch_len < len(branch_coverage):
         prev_branch_len = len(branch_coverage)
-        with open("test.csv", "a") as log_file:
-            for edge, count in coverage.items():
-                log_file.write("('%s: %s)\n" % (str(edge), str(count)))
     return (len(branch_coverage), sum(map(len, coverage.values())))
     #return sum(map(lencoverage)
     #return sum(map(len, data.values()))
