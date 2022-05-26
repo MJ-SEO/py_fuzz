@@ -45,7 +45,7 @@ def time_limit(seconds):
 def _log_hangs(self, buf):
     logging.info("=================================================================")
     logging.info("timeout reached. testcase took: {}".format(self._timeout))
-    self.write_sample(buf, prefix='timeout-')
+ #   self.write_sample(buf, prefix='timeout-')
 
 def worker(self, child_conn):
     # Silence the fuzzee's noise
@@ -176,8 +176,8 @@ class Fuzzer(object):
               logging.info("The crashes directory is created")
 
             crash_path = dir_path + "/" + prefix + m.hexdigest()
-        with open(crash_path, 'wb') as f:
-            f.write(buf)
+#        with open(crash_path, 'wb') as f:
+#            f.write(buf)
 #logging.info('sample was written to {}'.format(crash_path))
 #        if len(buf) < 200:
 #            logging.info('sample = {}'.format(buf.hex()))
@@ -228,7 +228,7 @@ class Fuzzer(object):
         end_time = time.time()
         if self._run_coverage is None :
             self._crashes += 1
-            self.write_sample(buf)
+     #       self.write_sample(buf)
             if not self._inf_run: # added
                exit_code = 76
                self.exit_protocol(exit_code)
@@ -263,7 +263,7 @@ class Fuzzer(object):
 
         if rss > self._rss_limit_mb:
             logging.info('MEMORY OOM: exceeded {} MB. Killing worker'.format(self._rss_limit_mb))
-            self.write_sample(buf)
+      #      self.write_sample(buf)
             self._crashes += 1
             if not self._inf_run:
                 self._p.kill()

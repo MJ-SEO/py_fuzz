@@ -42,7 +42,7 @@ def time_limit(seconds):
 def _log_hangs(self, buf):
     logging.info("=================================================================")
     logging.info("timeout reached. testcase took: {}".format(self._timeout))
-    self.write_sample(buf, prefix='timeout-')
+ #   self.write_sample(buf, prefix='timeout-')
 
 
 def worker(self, child_conn):
@@ -73,7 +73,7 @@ def worker(self, child_conn):
             else:
                 _log_hangs(self, buf)
                 sys.settrace(None)
-                tracer.get_coverage()
+                tracer.reset_data()
 #                logging.exception(e)
                 child_conn.send(None)
                 continue
@@ -84,7 +84,7 @@ def worker(self, child_conn):
                 break
             else:
                 sys.settrace(None)
-                tracer.get_coverage()
+                tracer.reset_data()
 #                logging.exception(e)
                 child_conn.send(None)
         else:
@@ -177,7 +177,7 @@ class Fuzzer(object):
             coverages = parent_conn.recv()
             if coverages is None:
                 self._crashes += 1
-                self.write_sample(buf)
+ #               self.write_sample(buf)
                 if not self._inf_run:
                     exit_code = 76
                     break
@@ -199,7 +199,7 @@ class Fuzzer(object):
 
             if rss > self._rss_limit_mb:
                 logging.info('MEMORY OOM: exceeded {} MB. Killing worker'.format(self._rss_limit_mb))
-                self.write_sample(buf)
+   #             self.write_sample(buf)
                 self._p.kill()
                 self._crashes += 1
                 if not self._inf_run:
