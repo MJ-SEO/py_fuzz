@@ -1,4 +1,5 @@
 import collections
+from itertools import count
 import sys
 
 prev_line = 0
@@ -21,7 +22,7 @@ def trace(frame, event, arg):
     func_filename = frame.f_code.co_filename
     func_line_no = frame.f_lineno
 
-#    print(func_filename, "prev_line: ", prev_line, "curr_line: ", func_line_no)
+#    print("OO", func_filename, "prev_line: ", prev_line, "curr_line: ", func_line_no)
 
     if func_filename != prev_filename:
         # We need a way to keep track of inter-files transferts,
@@ -54,17 +55,17 @@ def get_coverage():
     for edge in data:
         if data[edge] <= 1 :
             coverage[edge].add(0)
-        elif data[edge] <= 2 :
+        elif data[edge] <= 8 :
             coverage[edge].add(1)
-        elif data[edge] <= 3 :
-            coverage[edge].add(2)
-        elif data[edge] <= 16 :
-            coverage[edge].add(3)
         elif data[edge] <= 32 :
-            coverage[edge].add(4)
+            coverage[edge].add(2)
         elif data[edge] <= 64 :
-            coverage[edge].add(5)
+            coverage[edge].add(3)
         elif data[edge] <= 128 :
+            coverage[edge].add(4)
+        elif data[edge] <= 256 :
+            coverage[edge].add(5)
+        elif data[edge] <= 512 :
             coverage[edge].add(6)
         else : 
             coverage[edge].add(7)
@@ -74,8 +75,13 @@ def get_coverage():
     data = {} 
     if prev_branch_len < len(branch_coverage):
         prev_branch_len = len(branch_coverage)
-#    with open("log.csv", "a") as log_file:
-#            log_file.write("branch_cov: %d\n" % (prev_branch_len))
-    return (len(branch_coverage), sum(map(len,coverage.values())))
+        with open("test.csv", "a") as log_file:
+            for edge, count in coverage.items():
+                log_file.write("('%s: %s)\n" % (str(edge), str(count)))
+    return (len(branch_coverage), sum(map(len, coverage.values())))
     #return sum(map(lencoverage)
     #return sum(map(len, data.values()))
+
+def reset_data():
+    global data
+    data = {}

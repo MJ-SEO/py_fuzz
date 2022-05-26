@@ -56,7 +56,7 @@ def worker(self, child_conn):
     if self._close_fd_mask & 1:
         sys.stdout = DummyFile()
     if self._close_fd_mask & 2:
-	    sys.stderr = DummyFile()
+        sys.stderr = DummyFile()
 
 #    sys.settrace(tracer.trace)
     while True:
@@ -73,6 +73,7 @@ def worker(self, child_conn):
             else:
                 _log_hangs(self, buf)
                 sys.settrace(None)
+                tracer.get_coverage()
 #                logging.exception(e)
                 child_conn.send(None)
                 continue
@@ -83,6 +84,7 @@ def worker(self, child_conn):
                 break
             else:
                 sys.settrace(None)
+                tracer.get_coverage()
 #                logging.exception(e)
                 child_conn.send(None)
         else:
@@ -129,7 +131,7 @@ class Fuzzer(object):
         execs_per_second = int(self._executions_in_sample / (endTime - self._last_sample_time))
         self._last_sample_time = time.time()
         self._executions_in_sample = 0
-        logging.info('#{} {}     cov: {} {} corp: {} exec/s: {} rss: {} MB crashed: {}'.format(
+        logging.info('#OO {} {}     cov: {} {} corp: {} exec/s: {} rss: {} MB crashed: {}'.format(
             self._total_executions, log_type, self._total_coverage, self._total_bhcoverage, self._corpus.length, execs_per_second, rss, self._crashes))
 
         with open("log.csv", "a") as log_file:
