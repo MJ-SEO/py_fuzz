@@ -14,7 +14,7 @@ INTERESTING8 = [-128, -1, 0, 1, 16, 32, 64, 100, 127]
 INTERESTING16 = [0, 128, 255, 256, 512, 1000, 1024, 4096, 32767, 65535]
 INTERESTING32 = [0, 1, 32768, 65535, 65536, 100663045, 2147483647, 4294967295]
 
-Deterministic = 10
+Deterministic = 12
 Havoc = 18
 
 class Mutator:
@@ -184,6 +184,7 @@ class Mutator:
                         little_endian = struct.pack('<H', interest16)
                         self.assign(res, buf, pos, little_endian, 2)
                         self.cut_and_run(res, fuzz_loop)
+                    res = copy.deepcopy(buf)             
                 elif x == 6:
                     # print("replace interesting 4 byte")
                     # Replace an uint32 with an interesting value.
@@ -200,6 +201,7 @@ class Mutator:
                         little_endian = struct.pack('<I', interest32)
                         self.assign(res, buf, pos, little_endian, 4)
                         self.cut_and_run(res, fuzz_loop)
+                    res = copy.deepcopy(buf)
                 elif x == 7:
                     # Replace an ascii digit with another digit.
                     if len(res) <= index:
@@ -214,30 +216,6 @@ class Mutator:
                             if not self.could_be_bitflip(res[pos] ^ buf[pos]) :
                                 self.cut_and_run(res, fuzz_loop)
                 elif x == 8:
-                    # Insert Dictionary word
-                    dict_word = self._dict.get_word()
-                    if dict_word is None:
-                        continue
-                    pos = index
-                    n = len(dict_word)
-                    for k in range(n):
-                        res.append(0)
-                    self.copy(buf, res, pos, pos+n)
-                    for k in range(n):
-                        res[pos+k] = dict_word[k]
-                    self.cut_and_run(res, fuzz_loop)
-                elif x == 9:
-                    # Replace with Dictionary word
-                    dict_word = self._dict.get_word()
-                    
-                    if(dict_word == None or len(res) < len(dict_word) or index > len(res) - len(dict_word)):
-                        continue
-                    
-                    pos = index
-                    self.copy(dict_word, res, 0, pos)
-                    self.cut_and_run(res, fuzz_loop)
-                '''
-                elif x == 4:
                     # Add/subtract from a byte.
                     if len(res) == 0:
                         continue
@@ -253,7 +231,7 @@ class Mutator:
                         if not self.could_be_bitflip(res[pos] ^ buf[pos]) :
                             self.cut_and_run(res, fuzz_loop)
                         self.cut_and_run(res, fuzz_loop)  # Why?
-                elif x == 5:
+                elif x == 9:
                     # print("add/subtract 2 byte")
                     # Add/subtract from a uint16.
                     if len(res) < 2 or len(res) - 2 < index:
@@ -280,6 +258,34 @@ class Mutator:
                         little_endian = struct.pack('<H', val_16)
                         self.assign(res, buf, pos, little_endian, 2)
                         self.cut_and_run(res, fuzz_loop)
+                    res = copy.deepcopy(buf)
+                elif x == 10:
+                    # Insert Dictionary word
+                    dict_word = self._dict.get_word()
+                    if dict_word is None:
+                        continue
+                    pos = index
+                    n = len(dict_word)
+                    for k in range(n):
+                        res.append(0)
+                    self.copy(buf, res, pos, pos+n)
+                    for k in range(n):
+                        res[pos+k] = dict_word[k]
+                    self.cut_and_run(res, fuzz_loop)
+                    res = copy.deepcopy(buf)
+                elif x == 11:
+                    # Replace with Dictionary word
+                    dict_word = self._dict.get_word()
+                    
+                    if(dict_word == None or len(res) < len(dict_word) or index > len(res) - len(dict_word)):
+                        continue
+                    
+                    pos = index
+                    self.copy(dict_word, res, 0, pos)
+                    self.cut_and_run(res, fuzz_loop)
+                    res = copy.deepcopy(buf)
+                '''
+
                     '''
               
     
