@@ -75,8 +75,8 @@ def worker(self, child_conn):
             else:
                 _log_hangs(self, buf)
                 sys.settrace(None)
-                tracer.reset_data()
-                child_conn.send(None)
+                run_coverage = tracer.get_coverage()
+                child_conn.send((run_coverage, "CRASH"))
                 continue
         except Exception as e:
             if not self._inf_run:
@@ -85,12 +85,12 @@ def worker(self, child_conn):
                 break
             else:
                 sys.settrace(None)
-                tracer.reset_data()
-                child_conn.send(None)
+                run_coverage = tracer.get_coverage()
+                child_conn.send((run_coverage, "CRASH"))
         else:
             sys.settrace(None)
             run_coverage = tracer.get_coverage()
-            child_conn.send(run_coverage)
+            child_conn.send((run_coverage, "GOOD"))
 #           sys.settrace(tracer.trace)
 
 class Fuzzer(object):
@@ -149,15 +149,13 @@ class Fuzzer(object):
         self._last_sample_time = time.time()
         self._executions_in_sample = 0
         self._total_coverage = len(self._corpus._total_path)
- #       print("DEBUG Tlen: ", self._total_coverage)
- #       print("DEBUG Branch len", self._corpus._total_branch)
 
         n = self._n_time
         self._avg_time = n / (n + 1) * self._avg_time + execs_per_second / (n+1)
         self._n_time = n + 1
         
         logging.info('#{} {}     cov: {}, {} corp: {} exec/s: {} rss: {} MB Unique Crash: {} total avg exec/s: {}'.format(
-            self._total_executions, log_type, self._total_coverage, len(self._corpus._favored) ,self._corpus.length, execs_per_second, rss, self._crashes, self._avg_time))
+            self._total_executions, log_type, len(self._corpus._favored), self._total_coverage,self._corpus.length, execs_per_second, rss, self._crashes, self._avg_time))
 
         with open("log.csv", "a") as log_file:
             log_file.write("%d, %d, %d\n" %(self._total_executions, len(self._corpus._favored), self._total_coverage))
@@ -202,13 +200,15 @@ class Fuzzer(object):
             else :
 #                print("Depth, idx: ", self._corpus._select_count[self._corpus._seed_idx], self._corpus._seed_idx)
                 if self._corpus._passed_det[idx] is False:
+                    print("[Deterministic Stage] {idx = ",  idx,"}  LEN: ", len(self._corpus._inputs[idx]))
                     self._mutation.mutate_det(buf, self.fuzz_loop)
                     self._corpus._passed_det[idx] = True
-                else:
+                else:            
                     if self._sched > 0: # AFL
                         score = self._corpus.calculate_score(idx, self._sched)
                     else:
                         score = 512
+                    print("[Havoc Stage] {idx =" , idx, "}  LEN: ", len(self._corpus._inputs[idx]), "  Score: " , score)
                     for i in range(int(score)):
                         havoc_buf = self._mutation.mutate_havoc(buf, self._corpus)
                         self.fuzz_loop(havoc_buf, parent_conn)
@@ -224,15 +224,14 @@ class Fuzzer(object):
         start_time = time.time()
         parent_conn.send_bytes(buf)
 
-        self._run_coverage = parent_conn.recv()
+        self._run_coverage, crash = parent_conn.recv()
         end_time = time.time()
-        if self._run_coverage is None :
+        if crash == "CRASH" :
             self._crashes += 1
      #       self.write_sample(buf)
             if not self._inf_run: # added
                exit_code = 76
                self.exit_protocol(exit_code)
-            return
 
         self._total_executions += 1
         self._executions_in_sample += 1

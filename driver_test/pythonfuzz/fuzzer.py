@@ -73,7 +73,7 @@ def worker(self, child_conn):
             else:
                 _log_hangs(self, buf)
                 sys.settrace(None)
-                tracer.reset_data()
+                tracer.get_coverage()
 #                logging.exception(e)
                 child_conn.send(None)
                 continue
@@ -84,7 +84,7 @@ def worker(self, child_conn):
                 break
             else:
                 sys.settrace(None)
-                tracer.reset_data()
+                tracer.get_coverage()
 #                logging.exception(e)
                 child_conn.send(None)
         else:
@@ -172,6 +172,7 @@ class Fuzzer(object):
                 break
 
             buf = self._corpus.generate_input()
+
             parent_conn.send_bytes(buf)
 
             coverages = parent_conn.recv()

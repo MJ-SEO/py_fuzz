@@ -5,13 +5,13 @@ from pythonfuzz.main import PythonFuzz
 @PythonFuzz
 def fuzz(buf):
 	try:
-		string = buf.decode("ascii")
+		url = buf.decode("ascii")
 
-		page = requests.get("https://library.gabia.com/")
+		page = requests.get(url)
 		soup = bs(page.text, "html.parser")
 
 		elements = soup.select('div.esg-entry-content a > span')
-	except UnicodeDecodeError:
+	except (UnicodeDecodeError, requests.RequestException):
 		pass
 
 if __name__ == '__main__':

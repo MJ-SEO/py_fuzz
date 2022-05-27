@@ -1,5 +1,4 @@
 import os
-import math
 import random
 import struct
 import hashlib

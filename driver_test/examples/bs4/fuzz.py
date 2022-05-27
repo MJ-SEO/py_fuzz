@@ -9,7 +9,7 @@ def fuzz(buf):
             page = requests.get(url)
             soup = bs(page.text, "html.parser")
             elements = soup.select('div.esg-entry-content a > span')
-	except (UnicodeDecodeError, requests.exceptions.InvalidSchema, requests.exceptions.InvalidURL):
+	except (UnicodeDecodeError, requests.RequsetException):
 		pass
 
 if __name__ == '__main__':

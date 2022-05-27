@@ -1,0 +1,1137 @@
+Found existing installation: pythonfuzz 1.0.11
+Uninstalling pythonfuzz-1.0.11:
+  Successfully uninstalled pythonfuzz-1.0.11
+Processing /home/audwns27/workspace/testnm
+Requirement already satisfied: psutil==5.6.3 in /home/audwns27/.local/lib/python3.8/site-packages (from pythonfuzz==1.0.11) (5.6.3)
+Building wheels for collected packages: pythonfuzz
+  Building wheel for pythonfuzz (setup.py): started
+  Building wheel for pythonfuzz (setup.py): finished with status 'done'
+  Created wheel for pythonfuzz: filename=pythonfuzz-1.0.11-py3-none-any.whl size=20968 sha256=655a32b4cb3b59d78fe5fd71b7114ce474fc650f809057e97be9412f8c560219
+  Stored in directory: /tmp/pip-ephem-wheel-cache-wq13ajgb/wheels/1c/a9/53/2b0e95cddf5568bff31669a5048f44ebb72784dd7b797b1d29
+Successfully built pythonfuzz
+Installing collected packages: pythonfuzz
+Successfully installed pythonfuzz-1.0.11
+[DEBUG] #0 READ units: 21
+#1 SEED     cov: 89, 89 corp: 21 exec/s: 309 rss: 29.765625 MB Unique Crash: 0 total avg exec/s: 309.0
+#2 SEED     cov: 117, 161 corp: 21 exec/s: 686 rss: 30.171875 MB Unique Crash: 0 total avg exec/s: 497.5
+#3 SEED     cov: 117, 195 corp: 21 exec/s: 1146 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 713.6666666666666
+#4 SEED     cov: 117, 195 corp: 21 exec/s: 768 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 727.25
+#5 SEED     cov: 117, 195 corp: 21 exec/s: 659 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 713.6000000000001
+#6 SEED     cov: 117, 199 corp: 21 exec/s: 921 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 748.1666666666669
+#7 SEED     cov: 137, 242 corp: 21 exec/s: 675 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 737.7142857142859
+#8 SEED     cov: 137, 242 corp: 21 exec/s: 914 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 759.7500000000001
+#9 SEED     cov: 137, 242 corp: 21 exec/s: 508 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 731.7777777777778
+#10 SEED     cov: 137, 245 corp: 21 exec/s: 797 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 738.3000000000001
+#11 SEED     cov: 137, 302 corp: 21 exec/s: 266 rss: 30.2109375 MB Unique Crash: 0 total avg exec/s: 695.3636363636364
+#12 SEED     cov: 495, 660 corp: 21 exec/s: 183 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 652.6666666666666
+#13 SEED     cov: 496, 663 corp: 21 exec/s: 939 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 674.6923076923076
+#14 SEED     cov: 496, 663 corp: 21 exec/s: 513 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 663.1428571428571
+#15 SEED     cov: 496, 663 corp: 21 exec/s: 607 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 659.4
+#16 SEED     cov: 496, 663 corp: 21 exec/s: 723 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 663.375
+#17 SEED     cov: 496, 663 corp: 21 exec/s: 800 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 671.4117647058824
+#18 SEED     cov: 496, 664 corp: 21 exec/s: 869 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 682.388888888889
+#19 SEED     cov: 496, 664 corp: 21 exec/s: 986 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 698.3684210526317
+#20 SEED     cov: 496, 664 corp: 21 exec/s: 690 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 697.95
+#21 SEED     cov: 496, 664 corp: 21 exec/s: 1186 rss: 30.5859375 MB Unique Crash: 0 total avg exec/s: 721.1904761904761
+[Deterministic Stage] {idx =  1 }  LEN:  61
+#29 NEW     cov: 499, 667 corp: 22 exec/s: 1645 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 763.1818181818181
+#99 NEW     cov: 508, 676 corp: 23 exec/s: 1763 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 806.6521739130435
+#307 NEW     cov: 511, 679 corp: 24 exec/s: 3022 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 898.9583333333334
+#2975 NEW     cov: 511, 681 corp: 25 exec/s: 2481 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 962.24
+#3058 NEW     cov: 516, 686 corp: 26 exec/s: 1578 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 985.923076923077
+#3644 NEW     cov: 516, 689 corp: 27 exec/s: 2785 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1052.5555555555557
+#6493 NEW     cov: 517, 690 corp: 28 exec/s: 2950 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1120.3214285714287
+#6862 NEW     cov: 517, 692 corp: 29 exec/s: 2230 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1158.5862068965519
+#7059 NEW     cov: 528, 703 corp: 30 exec/s: 2098 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1189.9
+#7066 NEW     cov: 537, 712 corp: 31 exec/s: 2013 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1216.451612903226
+#16498 NEW     cov: 616, 852 corp: 32 exec/s: 3205 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1278.5937500000002
+#16533 NEW     cov: 617, 853 corp: 33 exec/s: 1527 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1286.1212121212125
+#16867 NEW     cov: 619, 855 corp: 34 exec/s: 2078 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1309.4117647058827
+#17071 NEW     cov: 624, 860 corp: 35 exec/s: 3173 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1362.657142857143
+#17135 NEW     cov: 630, 866 corp: 36 exec/s: 2367 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1390.5555555555557
+#17640 NEW     cov: 631, 867 corp: 37 exec/s: 3460 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1446.4864864864867
+[Deterministic Stage] {idx =  2 }  LEN:  65
+#19812 NEW     cov: 641, 877 corp: 38 exec/s: 3131 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1490.8157894736844
+#20635 NEW     cov: 654, 890 corp: 39 exec/s: 3107 rss: 30.921875 MB Unique Crash: 0 total avg exec/s: 1532.2564102564104
+#20785 NEW     cov: 655, 891 corp: 40 exec/s: 2707 rss: 30.921875 MB Unique Crash: 2 total avg exec/s: 1561.625
+#36009 NEW     cov: 657, 893 corp: 41 exec/s: 3254 rss: 30.921875 MB Unique Crash: 2 total avg exec/s: 1602.90243902439
+[Deterministic Stage] {idx =  6 }  LEN:  102
+#42424 PULSE     cov: 657, 893 corp: 41 exec/s: 1282 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1595.2619047619046
+#49764 PULSE     cov: 657, 893 corp: 41 exec/s: 1467 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1592.2790697674416
+#60280 PULSE     cov: 657, 893 corp: 41 exec/s: 2102 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1603.863636363636
+[Deterministic Stage] {idx =  11 }  LEN:  248
+#68660 PULSE     cov: 657, 893 corp: 41 exec/s: 1675 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1605.4444444444441
+#72888 PULSE     cov: 657, 893 corp: 41 exec/s: 845 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1588.9130434782605
+#77331 NEW     cov: 657, 897 corp: 42 exec/s: 945 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1575.2127659574464
+#82161 PULSE     cov: 657, 897 corp: 42 exec/s: 965 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1562.4999999999995
+#86047 NEW     cov: 660, 900 corp: 43 exec/s: 980 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1550.6122448979586
+#89931 PULSE     cov: 660, 900 corp: 43 exec/s: 776 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1535.1199999999994
+#94842 PULSE     cov: 660, 900 corp: 43 exec/s: 982 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1524.2745098039209
+#100078 PULSE     cov: 660, 900 corp: 43 exec/s: 1047 rss: 31.078125 MB Unique Crash: 2 total avg exec/s: 1515.0961538461531
+#107236 PULSE     cov: 660, 900 corp: 43 exec/s: 1431 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1513.5094339622635
+#114598 PULSE     cov: 660, 900 corp: 43 exec/s: 1472 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1512.7407407407402
+#123892 PULSE     cov: 660, 900 corp: 43 exec/s: 1858 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1519.0181818181813
+#133432 NEW     cov: 660, 903 corp: 44 exec/s: 2366 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1534.1428571428567
+[Deterministic Stage] {idx =  12 }  LEN:  328
+#141368 NEW     cov: 660, 906 corp: 45 exec/s: 2917 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1558.4035087719292
+#158644 PULSE     cov: 660, 906 corp: 45 exec/s: 3455 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1591.1034482758614
+#175343 PULSE     cov: 660, 906 corp: 45 exec/s: 3339 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1620.7288135593215
+#190312 PULSE     cov: 660, 906 corp: 45 exec/s: 2993 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1643.5999999999995
+#206045 PULSE     cov: 660, 906 corp: 45 exec/s: 3146 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1668.2295081967209
+#219720 PULSE     cov: 660, 906 corp: 45 exec/s: 2734 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1685.419354838709
+#233841 PULSE     cov: 660, 906 corp: 45 exec/s: 2823 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1703.47619047619
+[Deterministic Stage] {idx =  20 }  LEN:  0
+[Deterministic Stage] {idx =  21 }  LEN:  61
+#236945 NEW     cov: 662, 908 corp: 46 exec/s: 3365 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1729.4374999999995
+#244478 NEW     cov: 662, 910 corp: 47 exec/s: 2864 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1746.8923076923074
+[Deterministic Stage] {idx =  22 }  LEN:  61
+#260869 PULSE     cov: 662, 910 corp: 47 exec/s: 3277 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1770.0757575757575
+[Deterministic Stage] {idx =  23 }  LEN:  61
+#278281 PULSE     cov: 662, 910 corp: 47 exec/s: 3482 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1795.6268656716416
+[Deterministic Stage] {idx =  25 }  LEN:  61
+#292473 PULSE     cov: 662, 910 corp: 47 exec/s: 2837 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1810.941176470588
+#302386 PULSE     cov: 662, 910 corp: 47 exec/s: 1982 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1813.4202898550725
+[Deterministic Stage] {idx =  27 }  LEN:  61
+#314849 PULSE     cov: 662, 910 corp: 47 exec/s: 2492 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1823.1142857142856
+[Deterministic Stage] {idx =  29 }  LEN:  61
+#329113 PULSE     cov: 662, 910 corp: 47 exec/s: 2852 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1837.605633802817
+[Deterministic Stage] {idx =  30 }  LEN:  61
+#344895 PULSE     cov: 662, 910 corp: 47 exec/s: 3155 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1855.9027777777778
+#358057 PULSE     cov: 662, 910 corp: 47 exec/s: 2632 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1866.5342465753424
+[Deterministic Stage] {idx =  31 }  LEN:  61
+#371667 PULSE     cov: 662, 910 corp: 47 exec/s: 2721 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1878.081081081081
+[Deterministic Stage] {idx =  32 }  LEN:  61
+#385310 PULSE     cov: 662, 910 corp: 47 exec/s: 2728 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1889.4133333333334
+[Deterministic Stage] {idx =  33 }  LEN:  61
+#400959 PULSE     cov: 662, 910 corp: 47 exec/s: 3129 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1905.7236842105262
+[Deterministic Stage] {idx =  34 }  LEN:  61
+#418161 PULSE     cov: 662, 910 corp: 47 exec/s: 3440 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1925.6493506493505
+[Deterministic Stage] {idx =  35 }  LEN:  61
+#435923 PULSE     cov: 662, 910 corp: 47 exec/s: 3552 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1946.4999999999998
+[Deterministic Stage] {idx =  36 }  LEN:  61
+#452397 PULSE     cov: 662, 910 corp: 47 exec/s: 3294 rss: 31.33203125 MB Unique Crash: 4 total avg exec/s: 1963.5569620253164
+[Deterministic Stage] {idx =  37 }  LEN:  65
+#469980 PULSE     cov: 662, 910 corp: 47 exec/s: 3516 rss: 31.5 MB Unique Crash: 4 total avg exec/s: 1982.9625
+[Deterministic Stage] {idx =  38 }  LEN:  65
+#488138 PULSE     cov: 662, 910 corp: 47 exec/s: 3631 rss: 31.5 MB Unique Crash: 4 total avg exec/s: 2003.3086419753088
+[Deterministic Stage] {idx =  39 }  LEN:  65
+#507408 PULSE     cov: 662, 910 corp: 47 exec/s: 3853 rss: 31.5 MB Unique Crash: 4 total avg exec/s: 2025.8658536585367
+[Deterministic Stage] {idx =  40 }  LEN:  65
+#525200 PULSE     cov: 662, 910 corp: 47 exec/s: 3558 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2044.3253012048192
+[Deterministic Stage] {idx =  42 }  LEN:  248
+#543169 PULSE     cov: 662, 910 corp: 47 exec/s: 3593 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2062.7619047619046
+#548137 NEW     cov: 662, 915 corp: 48 exec/s: 3538 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2080.1176470588234
+#560619 PULSE     cov: 662, 915 corp: 48 exec/s: 2496 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2084.953488372093
+#562383 NEW     cov: 669, 922 corp: 49 exec/s: 1957 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2083.4827586206898
+#572620 PULSE     cov: 669, 922 corp: 49 exec/s: 2047 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2083.068181818182
+#577051 NEW     cov: 669, 925 corp: 50 exec/s: 1583 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2077.449438202247
+#585719 PULSE     cov: 669, 925 corp: 50 exec/s: 1733 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2073.6222222222223
+#592783 PULSE     cov: 669, 925 corp: 50 exec/s: 1412 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2066.3516483516487
+#601818 PULSE     cov: 669, 925 corp: 50 exec/s: 1806 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2063.521739130435
+#609909 PULSE     cov: 669, 925 corp: 50 exec/s: 1618 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2058.731182795699
+[Deterministic Stage] {idx =  45 }  LEN:  61
+#618471 PULSE     cov: 669, 925 corp: 50 exec/s: 1712 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2055.04255319149
+#633131 PULSE     cov: 669, 925 corp: 50 exec/s: 2931 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2064.263157894737
+[Deterministic Stage] {idx =  48 }  LEN:  248
+#640942 PULSE     cov: 669, 925 corp: 50 exec/s: 1561 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2059.0208333333335
+#651065 PULSE     cov: 669, 925 corp: 50 exec/s: 2024 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2058.659793814433
+#661700 PULSE     cov: 669, 925 corp: 50 exec/s: 2126 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2059.3469387755104
+#676543 PULSE     cov: 669, 925 corp: 50 exec/s: 2968 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2068.5252525252527
+#692725 PULSE     cov: 669, 925 corp: 50 exec/s: 3236 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2080.2000000000003
+[Deterministic Stage] {idx =  49 }  LEN:  248
+#706632 PULSE     cov: 669, 925 corp: 50 exec/s: 2781 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2087.138613861386
+#713388 PULSE     cov: 669, 925 corp: 50 exec/s: 1351 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2079.921568627451
+#723481 PULSE     cov: 669, 925 corp: 50 exec/s: 2018 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2079.320388349515
+#733237 PULSE     cov: 669, 925 corp: 50 exec/s: 1951 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2078.0865384615386
+#747481 PULSE     cov: 669, 925 corp: 50 exec/s: 2848 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2085.419047619048
+#759888 PULSE     cov: 669, 925 corp: 50 exec/s: 2481 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2089.1509433962265
+#770001 PULSE     cov: 669, 925 corp: 50 exec/s: 2022 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2088.5233644859813
+[Havoc Stage]
+#779680 NEW     cov: 671, 927 corp: 51 exec/s: 2820 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2095.2962962962965
+[Havoc Stage]
+#779889 NEW     cov: 673, 929 corp: 52 exec/s: 1879 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2093.311926605505
+#780188 NEW     cov: 674, 932 corp: 53 exec/s: 2123 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2093.581818181819
+[Havoc Stage]
+#780338 NEW     cov: 674, 940 corp: 54 exec/s: 1969 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2092.4594594594605
+#780596 NEW     cov: 674, 949 corp: 55 exec/s: 1129 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2083.857142857144
+#780709 NEW     cov: 674, 955 corp: 56 exec/s: 1506 rss: 31.5234375 MB Unique Crash: 4 total avg exec/s: 2078.7433628318595
+[Havoc Stage]
+#780846 NEW     cov: 677, 958 corp: 57 exec/s: 1206 rss: 31.76171875 MB Unique Crash: 4 total avg exec/s: 2071.087719298247
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#791220 NEW     cov: 677, 960 corp: 58 exec/s: 2814 rss: 31.76171875 MB Unique Crash: 4 total avg exec/s: 2077.547826086958
+[Havoc Stage]
+#791760 NEW     cov: 677, 973 corp: 59 exec/s: 2975 rss: 31.76171875 MB Unique Crash: 4 total avg exec/s: 2085.2844827586227
+[Havoc Stage]
+#792411 NEW     cov: 677, 978 corp: 60 exec/s: 2240 rss: 31.76171875 MB Unique Crash: 4 total avg exec/s: 2086.6068376068397
+[Deterministic Stage] {idx =  50 }  LEN:  63
+#809552 PULSE     cov: 677, 978 corp: 60 exec/s: 3427 rss: 31.76171875 MB Unique Crash: 4 total avg exec/s: 2097.966101694917
+[Deterministic Stage] {idx =  51 }  LEN:  64
+#820420 PULSE     cov: 677, 978 corp: 60 exec/s: 2173 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2098.596638655464
+[Deterministic Stage] {idx =  52 }  LEN:  65
+#832294 PULSE     cov: 677, 978 corp: 60 exec/s: 2374 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2100.8916666666687
+#840465 PULSE     cov: 677, 978 corp: 60 exec/s: 1633 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2097.0247933884316
+[Deterministic Stage] {idx =  56 }  LEN:  248
+#850294 PULSE     cov: 677, 978 corp: 60 exec/s: 1965 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2095.9426229508217
+#858342 PULSE     cov: 677, 978 corp: 60 exec/s: 1609 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2091.9837398374
+#863401 PULSE     cov: 677, 978 corp: 60 exec/s: 1011 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2083.26612903226
+#867538 PULSE     cov: 677, 978 corp: 60 exec/s: 827 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2073.2160000000017
+#870262 PULSE     cov: 677, 978 corp: 60 exec/s: 544 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2061.0793650793667
+#874965 PULSE     cov: 677, 978 corp: 60 exec/s: 940 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2052.2519685039388
+#879557 NEW     cov: 678, 979 corp: 61 exec/s: 946 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2043.6093750000018
+#879708 NEW     cov: 679, 980 corp: 62 exec/s: 733 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2033.4496124031027
+#880664 NEW     cov: 679, 981 corp: 63 exec/s: 1170 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2026.8076923076942
+#886536 PULSE     cov: 679, 981 corp: 63 exec/s: 1174 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2020.297709923666
+#893047 PULSE     cov: 679, 981 corp: 63 exec/s: 1301 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2014.8484848484866
+#899541 PULSE     cov: 679, 981 corp: 63 exec/s: 1298 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2009.458646616543
+#907487 PULSE     cov: 679, 981 corp: 63 exec/s: 1588 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2006.3134328358226
+#915722 PULSE     cov: 679, 981 corp: 63 exec/s: 1646 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2003.644444444446
+[Deterministic Stage] {idx =  60 }  LEN:  248
+#927620 PULSE     cov: 679, 981 corp: 63 exec/s: 2379 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2006.4044117647074
+#937909 PULSE     cov: 679, 981 corp: 63 exec/s: 2057 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2006.7737226277388
+#945254 PULSE     cov: 679, 981 corp: 63 exec/s: 1468 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2002.8695652173928
+#953952 PULSE     cov: 679, 981 corp: 63 exec/s: 1739 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 2000.9712230215844
+#962508 PULSE     cov: 679, 981 corp: 63 exec/s: 1711 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1998.9000000000017
+#972014 PULSE     cov: 679, 981 corp: 63 exec/s: 1901 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1998.2056737588669
+#981453 PULSE     cov: 679, 981 corp: 63 exec/s: 1887 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1997.4225352112692
+#989630 PULSE     cov: 679, 981 corp: 63 exec/s: 1635 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1994.8881118881136
+[Deterministic Stage] {idx =  61 }  LEN:  248
+#999968 PULSE     cov: 679, 981 corp: 63 exec/s: 2067 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1995.3888888888907
+#1011187 PULSE     cov: 679, 981 corp: 63 exec/s: 2243 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1997.0965517241398
+#1021435 PULSE     cov: 679, 981 corp: 63 exec/s: 2049 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1997.4520547945224
+#1031012 PULSE     cov: 679, 981 corp: 63 exec/s: 1915 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1996.8911564625869
+#1040350 PULSE     cov: 679, 981 corp: 63 exec/s: 1867 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1996.0135135135151
+#1048941 PULSE     cov: 679, 981 corp: 63 exec/s: 1718 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1994.147651006713
+#1057525 PULSE     cov: 679, 981 corp: 63 exec/s: 1716 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1992.2933333333349
+#1065372 PULSE     cov: 679, 981 corp: 63 exec/s: 1569 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1989.4900662251669
+[Deterministic Stage] {idx =  62 }  LEN:  248
+#1078322 PULSE     cov: 679, 981 corp: 63 exec/s: 2589 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1993.4342105263172
+#1088679 PULSE     cov: 679, 981 corp: 63 exec/s: 2071 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1993.9411764705897
+#1099148 PULSE     cov: 679, 981 corp: 63 exec/s: 2093 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1994.584415584417
+#1108419 PULSE     cov: 679, 981 corp: 63 exec/s: 1854 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1993.6774193548401
+#1116889 PULSE     cov: 679, 981 corp: 63 exec/s: 1693 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1991.7500000000016
+#1125799 PULSE     cov: 679, 981 corp: 63 exec/s: 1781 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1990.4076433121036
+#1134965 PULSE     cov: 679, 981 corp: 63 exec/s: 1832 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1989.4050632911408
+[Havoc Stage]
+#1140585 NEW     cov: 685, 987 corp: 64 exec/s: 1666 rss: 31.76171875 MB Unique Crash: 6 total avg exec/s: 1987.3710691823915
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#1153729 NEW     cov: 688, 990 corp: 65 exec/s: 2687 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 1991.7437500000017
+#1153997 NEW     cov: 688, 991 corp: 66 exec/s: 2331 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 1993.8509316770203
+#1154053 NEW     cov: 688, 993 corp: 67 exec/s: 2530 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 1997.160493827162
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  63 }  LEN:  74
+#1165534 PULSE     cov: 688, 993 corp: 67 exec/s: 2295 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 1998.9877300613514
+[Deterministic Stage] {idx =  64 }  LEN:  68
+#1180040 PULSE     cov: 688, 993 corp: 67 exec/s: 2900 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 2004.481707317075
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  4 }  LEN:  45
+#1199276 PULSE     cov: 688, 993 corp: 67 exec/s: 3847 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 2015.6484848484865
+[Havoc Stage]
+[Deterministic Stage] {idx =  10 }  LEN:  448
+#1212656 PULSE     cov: 688, 993 corp: 67 exec/s: 2674 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 2019.6144578313272
+#1215804 PULSE     cov: 688, 993 corp: 67 exec/s: 629 rss: 32.19921875 MB Unique Crash: 6 total avg exec/s: 2011.2874251497024
+#1219150 PULSE     cov: 688, 993 corp: 67 exec/s: 669 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 2003.2976190476209
+#1222484 PULSE     cov: 688, 993 corp: 67 exec/s: 666 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1995.384615384617
+#1226157 PULSE     cov: 688, 993 corp: 67 exec/s: 734 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1987.9647058823546
+#1229397 PULSE     cov: 688, 993 corp: 67 exec/s: 647 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1980.1228070175453
+#1232625 PULSE     cov: 688, 993 corp: 67 exec/s: 645 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1972.3604651162805
+#1235923 PULSE     cov: 688, 993 corp: 67 exec/s: 659 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1964.7687861271688
+#1239681 PULSE     cov: 688, 993 corp: 67 exec/s: 751 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1957.793103448277
+#1243925 PULSE     cov: 688, 993 corp: 67 exec/s: 848 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1951.45142857143
+#1247668 PULSE     cov: 688, 993 corp: 67 exec/s: 748 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1944.6136363636376
+#1251137 PULSE     cov: 688, 993 corp: 67 exec/s: 693 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1937.5423728813573
+#1255058 PULSE     cov: 688, 993 corp: 67 exec/s: 783 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1931.0561797752823
+#1258069 PULSE     cov: 688, 993 corp: 67 exec/s: 602 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1923.6312849162023
+#1261515 PULSE     cov: 688, 993 corp: 67 exec/s: 689 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1916.7722222222235
+#1266754 PULSE     cov: 688, 993 corp: 67 exec/s: 1047 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1911.9668508287305
+#1272121 PULSE     cov: 688, 993 corp: 67 exec/s: 1073 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1907.357142857144
+#1277268 PULSE     cov: 688, 993 corp: 67 exec/s: 1029 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1902.5573770491815
+#1281021 PULSE     cov: 688, 993 corp: 67 exec/s: 750 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1896.2934782608706
+#1285102 PULSE     cov: 688, 993 corp: 67 exec/s: 816 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1890.4540540540552
+#1290525 PULSE     cov: 688, 993 corp: 67 exec/s: 1084 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1886.1182795698935
+#1295981 PULSE     cov: 688, 993 corp: 67 exec/s: 1091 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1881.8663101604286
+#1303241 PULSE     cov: 688, 993 corp: 67 exec/s: 1451 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1879.5744680851071
+#1310974 PULSE     cov: 688, 993 corp: 67 exec/s: 1546 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1877.8095238095245
+#1317930 PULSE     cov: 688, 993 corp: 67 exec/s: 1391 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1875.2473684210534
+#1328073 PULSE     cov: 688, 993 corp: 67 exec/s: 2028 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1876.0471204188489
+#1338137 PULSE     cov: 688, 993 corp: 67 exec/s: 2012 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1876.755208333334
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  14 }  LEN:  107
+#1348639 PULSE     cov: 688, 993 corp: 67 exec/s: 2100 rss: 32.19921875 MB Unique Crash: 8 total avg exec/s: 1877.9119170984463
+#1356966 PULSE     cov: 688, 993 corp: 67 exec/s: 1665 rss: 32.19921875 MB Unique Crash: 10 total avg exec/s: 1876.8144329896916
+#1366402 PULSE     cov: 688, 993 corp: 67 exec/s: 1887 rss: 32.19921875 MB Unique Crash: 10 total avg exec/s: 1876.8666666666675
+[Deterministic Stage] {idx =  16 }  LEN:  244
+#1379328 PULSE     cov: 688, 993 corp: 67 exec/s: 2584 rss: 32.19921875 MB Unique Crash: 10 total avg exec/s: 1880.4744897959192
+#1388035 PULSE     cov: 688, 993 corp: 67 exec/s: 1741 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1879.76649746193
+#1395757 PULSE     cov: 688, 993 corp: 67 exec/s: 1544 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1878.070707070708
+#1406605 PULSE     cov: 688, 993 corp: 67 exec/s: 2169 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1879.532663316584
+#1420088 PULSE     cov: 688, 993 corp: 67 exec/s: 2696 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1883.615000000001
+#1434390 PULSE     cov: 688, 993 corp: 67 exec/s: 2860 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1888.4726368159213
+[Deterministic Stage] {idx =  17 }  LEN:  124
+#1448995 PULSE     cov: 688, 993 corp: 67 exec/s: 2920 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1893.5792079207931
+#1464123 PULSE     cov: 688, 993 corp: 67 exec/s: 3025 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1899.152709359607
+#1480119 PULSE     cov: 688, 993 corp: 67 exec/s: 3199 rss: 32.19921875 MB Unique Crash: 12 total avg exec/s: 1905.5245098039227
+[Deterministic Stage] {idx =  18 }  LEN:  96
+#1495493 PULSE     cov: 688, 993 corp: 67 exec/s: 3074 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1911.2243902439036
+#1509907 PULSE     cov: 688, 993 corp: 67 exec/s: 2882 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1915.9368932038847
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  26 }  LEN:  61
+#1527318 PULSE     cov: 688, 993 corp: 67 exec/s: 3482 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1923.5024154589382
+[Havoc Stage]
+[Deterministic Stage] {idx =  28 }  LEN:  61
+#1544678 PULSE     cov: 688, 993 corp: 67 exec/s: 3471 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1930.9423076923088
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  43 }  LEN:  248
+#1560807 PULSE     cov: 688, 993 corp: 67 exec/s: 3225 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1937.133971291867
+#1572930 PULSE     cov: 688, 993 corp: 67 exec/s: 2423 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1939.44761904762
+#1582657 PULSE     cov: 688, 993 corp: 67 exec/s: 1945 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1939.4739336492898
+#1592469 PULSE     cov: 688, 993 corp: 67 exec/s: 1962 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1939.580188679246
+#1601543 PULSE     cov: 688, 993 corp: 67 exec/s: 1814 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1938.9906103286394
+#1609549 PULSE     cov: 688, 993 corp: 67 exec/s: 1601 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1937.411214953272
+#1618657 PULSE     cov: 688, 993 corp: 67 exec/s: 1821 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1936.8697674418615
+#1627157 PULSE     cov: 688, 993 corp: 67 exec/s: 1699 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1935.7685185185194
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  54 }  LEN:  102
+#1635420 PULSE     cov: 688, 993 corp: 67 exec/s: 1652 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1934.4608294930883
+#1642577 PULSE     cov: 688, 993 corp: 67 exec/s: 1431 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1932.1513761467897
+#1651432 PULSE     cov: 688, 993 corp: 67 exec/s: 1770 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1931.4109589041102
+#1663388 PULSE     cov: 688, 993 corp: 67 exec/s: 2390 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1933.495454545455
+[Deterministic Stage] {idx =  55 }  LEN:  102
+#1670395 PULSE     cov: 688, 993 corp: 67 exec/s: 1401 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1931.0859728506794
+#1680692 PULSE     cov: 688, 993 corp: 67 exec/s: 2059 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1931.662162162163
+[Havoc Stage]
+#1693520 PULSE     cov: 688, 993 corp: 67 exec/s: 2565 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1934.502242152467
+[Deterministic Stage] {idx =  57 }  LEN:  248
+#1703955 PULSE     cov: 688, 993 corp: 67 exec/s: 2086 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1935.178571428572
+#1712971 PULSE     cov: 688, 993 corp: 67 exec/s: 1802 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1934.586666666667
+#1720374 PULSE     cov: 688, 993 corp: 67 exec/s: 1480 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1932.5752212389384
+#1727958 PULSE     cov: 688, 993 corp: 67 exec/s: 1516 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1930.7400881057272
+#1734624 PULSE     cov: 688, 993 corp: 67 exec/s: 1332 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1928.1140350877197
+#1740506 PULSE     cov: 688, 993 corp: 67 exec/s: 1176 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1924.8296943231444
+#1746447 PULSE     cov: 688, 993 corp: 67 exec/s: 1188 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1921.6260869565222
+#1754136 PULSE     cov: 688, 993 corp: 67 exec/s: 1537 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1919.9610389610393
+#1762156 PULSE     cov: 688, 993 corp: 67 exec/s: 1603 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1918.5948275862072
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#1768065 NEW     cov: 688, 999 corp: 68 exec/s: 1586 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1917.1673819742493
+[Havoc Stage]
+#1768656 NEW     cov: 688, 1002 corp: 69 exec/s: 2031 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1917.6538461538464
+[Deterministic Stage] {idx =  68 }  LEN:  60
+[Havoc Stage]
+#1786721 PULSE     cov: 688, 1002 corp: 69 exec/s: 3612 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1924.8638297872342
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#1798864 PULSE     cov: 688, 1002 corp: 69 exec/s: 2428 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1926.9957627118647
+[Deterministic Stage] {idx =  46 }  LEN:  61
+#1814500 PULSE     cov: 688, 1002 corp: 69 exec/s: 3126 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1932.0548523206755
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  53 }  LEN:  106
+#1822689 PULSE     cov: 688, 1002 corp: 69 exec/s: 1637 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1930.8151260504205
+#1829260 PULSE     cov: 688, 1002 corp: 69 exec/s: 1314 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1928.2343096234313
+#1837071 PULSE     cov: 688, 1002 corp: 69 exec/s: 1562 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1926.7083333333337
+#1846911 PULSE     cov: 688, 1002 corp: 69 exec/s: 1967 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1926.8755186721996
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  65 }  LEN:  88
+#1859092 PULSE     cov: 688, 1002 corp: 69 exec/s: 2436 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1928.9793388429755
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#1879194 PULSE     cov: 688, 1002 corp: 69 exec/s: 4019 rss: 32.19921875 MB Unique Crash: 14 total avg exec/s: 1937.5802469135806
+[Deterministic Stage] {idx =  3 }  LEN:  80
+#1889227 PULSE     cov: 688, 1002 corp: 69 exec/s: 2006 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1937.8606557377054
+#1901329 PULSE     cov: 688, 1002 corp: 69 exec/s: 2420 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1939.8285714285719
+[Havoc Stage]
+[Havoc Stage]
+#1903172 NEW     cov: 690, 1004 corp: 70 exec/s: 1865 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1939.5243902439029
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#1915020 PULSE     cov: 690, 1004 corp: 70 exec/s: 2369 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1941.2631578947373
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  69 }  LEN:  248
+#1919062 NEW     cov: 690, 1009 corp: 71 exec/s: 2118 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1941.9758064516134
+#1923101 PULSE     cov: 690, 1009 corp: 71 exec/s: 807 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1937.4176706827313
+#1927285 PULSE     cov: 690, 1009 corp: 71 exec/s: 836 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1933.0120000000004
+#1932259 PULSE     cov: 690, 1009 corp: 71 exec/s: 994 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1929.2709163346617
+#1936408 PULSE     cov: 690, 1009 corp: 71 exec/s: 829 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1924.9047619047624
+#1939767 PULSE     cov: 690, 1009 corp: 71 exec/s: 671 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1919.948616600791
+#1943815 PULSE     cov: 690, 1009 corp: 71 exec/s: 809 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1915.5748031496069
+#1948353 PULSE     cov: 690, 1009 corp: 71 exec/s: 907 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1911.6196078431378
+#1954030 PULSE     cov: 690, 1009 corp: 71 exec/s: 1135 rss: 32.19921875 MB Unique Crash: 16 total avg exec/s: 1908.5859375000007
+#1960889 PULSE     cov: 690, 1009 corp: 71 exec/s: 1371 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1906.4941634241252
+#1968346 PULSE     cov: 690, 1009 corp: 71 exec/s: 1491 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1904.8837209302333
+#1973526 NEW     cov: 691, 1010 corp: 72 exec/s: 1941 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1905.0231660231668
+#1984184 PULSE     cov: 691, 1010 corp: 72 exec/s: 2131 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1905.8923076923086
+[Deterministic Stage] {idx =  71 }  LEN:  248
+#1998257 PULSE     cov: 691, 1010 corp: 72 exec/s: 2814 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1909.3716475095794
+#2009822 PULSE     cov: 691, 1010 corp: 72 exec/s: 2312 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1910.9083969465657
+#2020045 PULSE     cov: 691, 1010 corp: 72 exec/s: 2044 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1911.4144486692023
+#2029402 PULSE     cov: 691, 1010 corp: 72 exec/s: 1871 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1911.2613636363644
+#2038278 PULSE     cov: 691, 1010 corp: 72 exec/s: 1775 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1910.7471698113213
+#2047135 PULSE     cov: 691, 1010 corp: 72 exec/s: 1771 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1910.2218045112786
+#2056950 PULSE     cov: 691, 1010 corp: 72 exec/s: 1962 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1910.415730337079
+[Havoc Stage]
+#2065029 PULSE     cov: 691, 1010 corp: 72 exec/s: 1615 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1909.3134328358212
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  8 }  LEN:  80
+#2074197 PULSE     cov: 691, 1010 corp: 72 exec/s: 1833 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1909.0297397769518
+#2085967 PULSE     cov: 691, 1010 corp: 72 exec/s: 2353 rss: 32.19921875 MB Unique Crash: 18 total avg exec/s: 1910.6740740740743
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  15 }  LEN:  88
+#2095436 PULSE     cov: 691, 1010 corp: 72 exec/s: 1893 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1910.6088560885612
+#2102234 PULSE     cov: 691, 1010 corp: 72 exec/s: 1359 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1908.5808823529414
+#2110949 PULSE     cov: 691, 1010 corp: 72 exec/s: 1742 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1907.9706959706962
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2125667 PULSE     cov: 691, 1010 corp: 72 exec/s: 2943 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1911.7481751824819
+[Havoc Stage]
+[Deterministic Stage] {idx =  44 }  LEN:  328
+#2142140 PULSE     cov: 691, 1010 corp: 72 exec/s: 3293 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1916.7709090909093
+#2159286 PULSE     cov: 691, 1010 corp: 72 exec/s: 3428 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1922.2463768115945
+#2175942 PULSE     cov: 691, 1010 corp: 72 exec/s: 3331 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1927.3321299638992
+#2192146 PULSE     cov: 691, 1010 corp: 72 exec/s: 3240 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1932.0539568345328
+#2207634 PULSE     cov: 691, 1010 corp: 72 exec/s: 3097 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1936.229390681004
+[Havoc Stage]
+[Deterministic Stage] {idx =  47 }  LEN:  248
+#2223624 PULSE     cov: 691, 1010 corp: 72 exec/s: 3197 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1940.7321428571433
+#2232965 PULSE     cov: 691, 1010 corp: 72 exec/s: 1868 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1940.4733096085415
+#2244071 PULSE     cov: 691, 1010 corp: 72 exec/s: 2221 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1941.4680851063836
+#2255331 PULSE     cov: 691, 1010 corp: 72 exec/s: 2251 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1942.5618374558308
+#2270385 PULSE     cov: 691, 1010 corp: 72 exec/s: 3010 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1946.3204225352117
+#2286008 PULSE     cov: 691, 1010 corp: 72 exec/s: 3124 rss: 32.19921875 MB Unique Crash: 20 total avg exec/s: 1950.4526315789478
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  58 }  LEN:  67
+#2299403 PULSE     cov: 691, 1010 corp: 72 exec/s: 2678 rss: 32.39453125 MB Unique Crash: 20 total avg exec/s: 1952.9965034965037
+#2316061 PULSE     cov: 691, 1010 corp: 72 exec/s: 3331 rss: 32.39453125 MB Unique Crash: 20 total avg exec/s: 1957.7979094076657
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  67 }  LEN:  74
+#2328740 PULSE     cov: 691, 1010 corp: 72 exec/s: 2535 rss: 32.40234375 MB Unique Crash: 20 total avg exec/s: 1959.8020833333335
+[Havoc Stage]
+[Havoc Stage]
+#2342580 PULSE     cov: 691, 1010 corp: 72 exec/s: 2766 rss: 32.421875 MB Unique Crash: 20 total avg exec/s: 1962.59169550173
+[Havoc Stage]
+[Deterministic Stage] {idx =  0 }  LEN:  60
+#2356766 PULSE     cov: 691, 1010 corp: 72 exec/s: 2836 rss: 32.421875 MB Unique Crash: 22 total avg exec/s: 1965.603448275862
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  19 }  LEN:  102
+#2365449 PULSE     cov: 691, 1010 corp: 72 exec/s: 1736 rss: 32.421875 MB Unique Crash: 22 total avg exec/s: 1964.8144329896909
+#2372583 PULSE     cov: 691, 1010 corp: 72 exec/s: 1426 rss: 32.421875 MB Unique Crash: 22 total avg exec/s: 1962.969178082192
+#2381639 PULSE     cov: 691, 1010 corp: 72 exec/s: 1811 rss: 32.421875 MB Unique Crash: 22 total avg exec/s: 1962.4505119453925
+[Havoc Stage]
+#2393796 PULSE     cov: 691, 1010 corp: 72 exec/s: 2431 rss: 32.421875 MB Unique Crash: 23 total avg exec/s: 1964.044217687075
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2407948 PULSE     cov: 691, 1010 corp: 72 exec/s: 2829 rss: 32.421875 MB Unique Crash: 23 total avg exec/s: 1966.9762711864407
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  24 }  LEN:  61
+#2417214 PULSE     cov: 691, 1010 corp: 72 exec/s: 1853 rss: 32.421875 MB Unique Crash: 23 total avg exec/s: 1966.5912162162163
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2434326 PULSE     cov: 691, 1010 corp: 72 exec/s: 3422 rss: 32.421875 MB Unique Crash: 23 total avg exec/s: 1971.4915824915824
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2444888 NEW     cov: 691, 1025 corp: 73 exec/s: 2354 rss: 32.421875 MB Unique Crash: 23 total avg exec/s: 1972.7751677852348
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2446902 NEW     cov: 691, 1031 corp: 74 exec/s: 1834 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1972.3110367892975
+[Havoc Stage]
+#2447347 NEW     cov: 691, 1037 corp: 75 exec/s: 1032 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1969.1766666666667
+[Havoc Stage]
+[Havoc Stage]
+#2448466 NEW     cov: 691, 1046 corp: 76 exec/s: 1376 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1967.2059800664454
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  59 }  LEN:  250
+#2462248 PULSE     cov: 691, 1046 corp: 76 exec/s: 2755 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1969.814569536424
+#2469147 PULSE     cov: 691, 1046 corp: 76 exec/s: 1379 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1967.864686468647
+#2477385 PULSE     cov: 691, 1046 corp: 76 exec/s: 1647 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1966.809210526316
+#2483649 PULSE     cov: 691, 1046 corp: 76 exec/s: 1252 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1964.465573770492
+#2491581 PULSE     cov: 691, 1046 corp: 76 exec/s: 1586 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1963.228758169935
+#2500775 PULSE     cov: 691, 1046 corp: 76 exec/s: 1838 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1962.8208469055378
+#2513332 PULSE     cov: 691, 1046 corp: 76 exec/s: 2511 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1964.6006493506495
+#2526487 PULSE     cov: 691, 1046 corp: 76 exec/s: 2630 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1966.7540453074434
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2537155 NEW     cov: 691, 1048 corp: 77 exec/s: 2835 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1969.5548387096776
+[Havoc Stage]
+[Havoc Stage]
+#2538472 NEW     cov: 691, 1049 corp: 78 exec/s: 1492 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1968.019292604502
+#2538637 NEW     cov: 691, 1051 corp: 79 exec/s: 892 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1964.5705128205132
+[Havoc Stage]
+[Deterministic Stage] {idx =  75 }  LEN:  253
+#2552218 PULSE     cov: 691, 1051 corp: 79 exec/s: 2716 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1966.97124600639
+#2566326 PULSE     cov: 691, 1051 corp: 79 exec/s: 2821 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1969.691082802548
+#2580882 PULSE     cov: 691, 1051 corp: 79 exec/s: 2911 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1972.6793650793652
+#2595465 PULSE     cov: 691, 1051 corp: 79 exec/s: 2916 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1975.6645569620255
+#2609326 PULSE     cov: 691, 1051 corp: 79 exec/s: 2771 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1978.1735015772872
+[Deterministic Stage] {idx =  76 }  LEN:  90
+#2623224 PULSE     cov: 691, 1051 corp: 79 exec/s: 2779 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1980.6918238993712
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2641023 PULSE     cov: 691, 1051 corp: 79 exec/s: 3559 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1985.639498432602
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  13 }  LEN:  208
+#2645783 PULSE     cov: 691, 1051 corp: 79 exec/s: 951 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1982.40625
+#2651498 PULSE     cov: 691, 1051 corp: 79 exec/s: 1142 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1979.7881619937693
+#2658764 PULSE     cov: 691, 1051 corp: 79 exec/s: 1452 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1978.1490683229813
+#2665816 PULSE     cov: 691, 1051 corp: 79 exec/s: 1409 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1976.3869969040247
+#2672934 PULSE     cov: 691, 1051 corp: 79 exec/s: 1423 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1974.679012345679
+#2679376 PULSE     cov: 691, 1051 corp: 79 exec/s: 1288 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1972.5661538461538
+#2685823 PULSE     cov: 691, 1051 corp: 79 exec/s: 1289 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1970.4693251533743
+#2696025 PULSE     cov: 691, 1051 corp: 79 exec/s: 2040 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1970.6819571865442
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2705879 NEW     cov: 693, 1053 corp: 80 exec/s: 3092 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1974.1006097560976
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2708187 NEW     cov: 694, 1055 corp: 81 exec/s: 3212 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1977.8632218844984
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2719177 NEW     cov: 694, 1056 corp: 82 exec/s: 2452 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1979.3
+[Havoc Stage]
+[Deterministic Stage] {idx =  79 }  LEN:  61
+#2735716 PULSE     cov: 694, 1056 corp: 82 exec/s: 3307 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1983.3111782477342
+[Deterministic Stage] {idx =  80 }  LEN:  65
+#2737608 NEW     cov: 694, 1059 corp: 83 exec/s: 2443 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1984.69578313253
+#2754148 PULSE     cov: 694, 1059 corp: 83 exec/s: 3307 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1988.6666666666667
+[Deterministic Stage] {idx =  82 }  LEN:  65
+#2769933 PULSE     cov: 694, 1059 corp: 83 exec/s: 3156 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1992.1616766467066
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2781895 PULSE     cov: 694, 1059 corp: 83 exec/s: 2392 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1993.355223880597
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2794288 PULSE     cov: 694, 1059 corp: 83 exec/s: 2478 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1994.797619047619
+#2794303 NEW     cov: 696, 1061 corp: 84 exec/s: 664 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1990.8486646884273
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2795444 NEW     cov: 697, 1062 corp: 85 exec/s: 2688 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1992.9112426035504
+[Deterministic Stage] {idx =  83 }  LEN:  249
+#2799692 PULSE     cov: 697, 1062 corp: 85 exec/s: 849 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1989.5368731563422
+#2803818 PULSE     cov: 697, 1062 corp: 85 exec/s: 824 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1986.108823529412
+#2808570 PULSE     cov: 697, 1062 corp: 85 exec/s: 950 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1983.0703812316717
+#2813050 PULSE     cov: 697, 1062 corp: 85 exec/s: 895 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1979.888888888889
+#2816694 PULSE     cov: 697, 1062 corp: 85 exec/s: 728 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1976.2390670553937
+#2820832 PULSE     cov: 697, 1062 corp: 85 exec/s: 827 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1972.8982558139535
+#2825290 PULSE     cov: 697, 1062 corp: 85 exec/s: 891 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1969.7623188405798
+#2830193 PULSE     cov: 697, 1062 corp: 85 exec/s: 980 rss: 32.734375 MB Unique Crash: 23 total avg exec/s: 1966.9017341040462
+#2836320 PULSE     cov: 697, 1062 corp: 85 exec/s: 1225 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1964.7636887608069
+#2843001 PULSE     cov: 697, 1062 corp: 85 exec/s: 1336 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1962.956896551724
+#2850439 NEW     cov: 698, 1063 corp: 86 exec/s: 1667 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1962.1088825214897
+#2860994 PULSE     cov: 698, 1063 corp: 86 exec/s: 2110 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1962.5314285714283
+[Deterministic Stage] {idx =  84 }  LEN:  69
+#2875843 PULSE     cov: 698, 1063 corp: 86 exec/s: 2969 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1965.39886039886
+[Deterministic Stage] {idx =  85 }  LEN:  249
+#2892369 PULSE     cov: 698, 1063 corp: 86 exec/s: 3305 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1969.204545454545
+#2904535 PULSE     cov: 698, 1063 corp: 86 exec/s: 2433 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1970.5184135977333
+#2914564 PULSE     cov: 698, 1063 corp: 86 exec/s: 2005 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1970.6158192090393
+#2924099 PULSE     cov: 698, 1063 corp: 86 exec/s: 1906 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1970.433802816901
+#2933444 PULSE     cov: 698, 1063 corp: 86 exec/s: 1868 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1970.1460674157302
+#2941989 PULSE     cov: 698, 1063 corp: 86 exec/s: 1708 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1969.4117647058822
+#2951295 PULSE     cov: 698, 1063 corp: 86 exec/s: 1861 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1969.1089385474859
+#2959949 PULSE     cov: 698, 1063 corp: 86 exec/s: 1730 rss: 32.734375 MB Unique Crash: 25 total avg exec/s: 1968.4428969359333
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  7 }  LEN:  48
+#2971416 PULSE     cov: 698, 1063 corp: 86 exec/s: 2293 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1969.3444444444447
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#2985591 PULSE     cov: 698, 1063 corp: 86 exec/s: 2834 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1971.739612188366
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  41 }  LEN:  248
+#2999158 PULSE     cov: 698, 1063 corp: 86 exec/s: 2713 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1973.7872928176798
+#3008942 PULSE     cov: 698, 1063 corp: 86 exec/s: 1956 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1973.7382920110194
+#3019208 PULSE     cov: 698, 1063 corp: 86 exec/s: 2053 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1973.9560439560441
+#3027428 PULSE     cov: 698, 1063 corp: 86 exec/s: 1643 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1973.0493150684933
+#3035616 PULSE     cov: 698, 1063 corp: 86 exec/s: 1637 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1972.1311475409839
+#3044147 PULSE     cov: 698, 1063 corp: 86 exec/s: 1706 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1971.4059945504089
+#3053142 PULSE     cov: 698, 1063 corp: 86 exec/s: 1798 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1970.934782608696
+[Havoc Stage]
+[Havoc Stage]
+#3061888 PULSE     cov: 698, 1063 corp: 86 exec/s: 1749 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1970.3333333333337
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3068488 NEW     cov: 698, 1064 corp: 87 exec/s: 2024 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1970.4783783783787
+[Havoc Stage]
+#3068852 NEW     cov: 698, 1065 corp: 88 exec/s: 1715 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1969.7897574123992
+[Havoc Stage]
+#3069552 NEW     cov: 698, 1066 corp: 89 exec/s: 1217 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1967.7661290322583
+[Havoc Stage]
+[Deterministic Stage] {idx =  87 }  LEN:  254
+#3073888 PULSE     cov: 698, 1066 corp: 89 exec/s: 866 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1964.8123324396786
+#3078001 PULSE     cov: 698, 1066 corp: 89 exec/s: 822 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1961.7566844919788
+#3082709 PULSE     cov: 698, 1066 corp: 89 exec/s: 941 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1959.034666666667
+#3087255 PULSE     cov: 698, 1066 corp: 89 exec/s: 909 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1956.242021276596
+#3091043 PULSE     cov: 698, 1066 corp: 89 exec/s: 757 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1953.06100795756
+#3095208 PULSE     cov: 698, 1066 corp: 89 exec/s: 832 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1950.0952380952383
+#3099559 PULSE     cov: 698, 1066 corp: 89 exec/s: 869 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1947.2427440633248
+#3105038 PULSE     cov: 698, 1066 corp: 89 exec/s: 1095 rss: 32.734375 MB Unique Crash: 27 total avg exec/s: 1945.0000000000002
+#3111581 PULSE     cov: 698, 1066 corp: 89 exec/s: 1308 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1943.3280839895015
+#3118383 PULSE     cov: 698, 1066 corp: 89 exec/s: 1360 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1941.801047120419
+#3127188 PULSE     cov: 698, 1066 corp: 89 exec/s: 1760 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1941.3263707571803
+#3136952 PULSE     cov: 698, 1066 corp: 89 exec/s: 1952 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1941.3541666666667
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3147591 PULSE     cov: 698, 1066 corp: 89 exec/s: 2127 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1941.8363636363638
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3161691 PULSE     cov: 698, 1066 corp: 89 exec/s: 2819 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1944.1088082901554
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3165724 NEW     cov: 698, 1067 corp: 90 exec/s: 1799 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1943.733850129199
+[Havoc Stage]
+#3166111 NEW     cov: 699, 1068 corp: 91 exec/s: 1339 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1942.175257731959
+[Havoc Stage]
+[Havoc Stage]
+#3166967 NEW     cov: 699, 1069 corp: 92 exec/s: 2854 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1944.5192802056556
+[Deterministic Stage] {idx =  90 }  LEN:  69
+#3180804 PULSE     cov: 699, 1069 corp: 92 exec/s: 2767 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1946.6282051282053
+[Deterministic Stage] {idx =  91 }  LEN:  256
+#3189863 PULSE     cov: 699, 1069 corp: 92 exec/s: 1811 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1946.281329923274
+#3193985 PULSE     cov: 699, 1069 corp: 92 exec/s: 824 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1943.418367346939
+#3199064 PULSE     cov: 699, 1069 corp: 92 exec/s: 1015 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1941.055979643766
+#3206567 PULSE     cov: 699, 1069 corp: 92 exec/s: 1500 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1939.9365482233504
+#3228610 PULSE     cov: 699, 1069 corp: 92 exec/s: 4408 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1946.1848101265825
+#3251488 PULSE     cov: 699, 1069 corp: 92 exec/s: 4575 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1952.8232323232326
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3267683 PULSE     cov: 699, 1069 corp: 92 exec/s: 3238 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1956.0604534005042
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3280904 PULSE     cov: 699, 1069 corp: 92 exec/s: 2643 rss: 32.734375 MB Unique Crash: 29 total avg exec/s: 1957.7864321608047
+[Havoc Stage]
+[Deterministic Stage] {idx =  72 }  LEN:  248
+#3285967 PULSE     cov: 699, 1069 corp: 92 exec/s: 1012 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1955.4160401002512
+#3291462 PULSE     cov: 699, 1069 corp: 92 exec/s: 1098 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1953.2725000000005
+#3297927 PULSE     cov: 699, 1069 corp: 92 exec/s: 1292 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1951.6234413965092
+#3303044 PULSE     cov: 699, 1069 corp: 92 exec/s: 1023 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1949.3134328358212
+#3309750 PULSE     cov: 699, 1069 corp: 92 exec/s: 1340 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1947.801488833747
+#3318939 PULSE     cov: 699, 1069 corp: 92 exec/s: 1837 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1947.5272277227725
+#3325420 PULSE     cov: 699, 1069 corp: 92 exec/s: 1295 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1945.9160493827162
+#3331846 PULSE     cov: 699, 1069 corp: 92 exec/s: 1285 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1944.2881773399015
+#3339961 PULSE     cov: 699, 1069 corp: 92 exec/s: 1622 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1943.4963144963144
+#3347279 PULSE     cov: 699, 1069 corp: 92 exec/s: 1463 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1942.3186274509803
+[Deterministic Stage] {idx =  73 }  LEN:  123
+#3356316 PULSE     cov: 699, 1069 corp: 92 exec/s: 1807 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1941.9877750611247
+#3362433 PULSE     cov: 699, 1069 corp: 92 exec/s: 1223 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1940.2341463414634
+#3369523 PULSE     cov: 699, 1069 corp: 92 exec/s: 1417 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1938.9610705596108
+#3377615 PULSE     cov: 699, 1069 corp: 92 exec/s: 1618 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1938.1820388349518
+#3390034 PULSE     cov: 699, 1069 corp: 92 exec/s: 2483 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1939.5012106537533
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3393364 NEW     cov: 699, 1070 corp: 93 exec/s: 1565 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1938.596618357488
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  5 }  LEN:  348
+#3403936 PULSE     cov: 699, 1070 corp: 93 exec/s: 2114 rss: 32.98828125 MB Unique Crash: 29 total avg exec/s: 1939.019277108434
+#3416316 PULSE     cov: 699, 1070 corp: 93 exec/s: 2475 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1940.3076923076926
+#3429450 PULSE     cov: 699, 1070 corp: 93 exec/s: 2626 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1941.9520383693048
+#3444499 PULSE     cov: 699, 1070 corp: 93 exec/s: 3009 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1944.5047846889954
+#3456656 PULSE     cov: 699, 1070 corp: 93 exec/s: 2431 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1945.6658711217183
+#3471279 PULSE     cov: 699, 1070 corp: 93 exec/s: 2924 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1947.9952380952382
+#3485216 PULSE     cov: 699, 1070 corp: 93 exec/s: 2787 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1949.9881235154396
+[Havoc Stage]
+[Havoc Stage]
+#3497809 PULSE     cov: 699, 1070 corp: 93 exec/s: 2517 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1951.3317535545027
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3511504 PULSE     cov: 699, 1070 corp: 93 exec/s: 2738 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1953.1914893617025
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  66 }  LEN:  67
+#3522423 PULSE     cov: 699, 1070 corp: 93 exec/s: 2183 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1953.733490566038
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3535995 PULSE     cov: 699, 1070 corp: 93 exec/s: 2714 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1955.522352941177
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3538562 NEW     cov: 699, 1071 corp: 94 exec/s: 1044 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1953.3826291079818
+[Deterministic Stage] {idx =  88 }  LEN:  73
+#3549615 PULSE     cov: 699, 1071 corp: 94 exec/s: 2210 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1953.9836065573777
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3563285 PULSE     cov: 699, 1071 corp: 94 exec/s: 2733 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1955.8037383177575
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+#3576321 PULSE     cov: 699, 1071 corp: 94 exec/s: 2606 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1957.3193473193478
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Havoc Stage]
+[Deterministic Stage] {idx =  70 }  LEN:  248
+#3587756 PULSE     cov: 699, 1071 corp: 94 exec/s: 2286 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1958.0837209302329
+#3598605 PULSE     cov: 699, 1071 corp: 94 exec/s: 2169 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1958.573085846868
+#3608186 PULSE     cov: 699, 1071 corp: 94 exec/s: 1915 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1958.4722222222226
+#3616658 PULSE     cov: 699, 1071 corp: 94 exec/s: 1694 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1957.8614318706702
+#3625593 PULSE     cov: 699, 1071 corp: 94 exec/s: 1786 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1957.4654377880188
+#3634071 PULSE     cov: 699, 1071 corp: 94 exec/s: 1695 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1956.8620689655174
+#3642530 PULSE     cov: 699, 1071 corp: 94 exec/s: 1691 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1956.2522935779816
+#3649115 PULSE     cov: 699, 1071 corp: 94 exec/s: 1316 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1954.787185354691
+[Havoc Stage]
+[Deterministic Stage] {idx =  74 }  LEN:  361
+#3653786 PULSE     cov: 699, 1071 corp: 94 exec/s: 933 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1952.4543378995434
+#3656942 PULSE     cov: 699, 1071 corp: 94 exec/s: 630 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1949.4419134396355
+#3659965 PULSE     cov: 699, 1071 corp: 94 exec/s: 604 rss: 32.98828125 MB Unique Crash: 31 total avg exec/s: 1946.3840909090907

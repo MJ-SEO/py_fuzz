@@ -1,10 +1,8 @@
-import collections
+
 import hashlib
 import os
 from random import random
-import statistics
-
-from . import mutate
+import numpy as np
 
 INTERESTING8 = [-128, -1, 0, 1, 16, 32, 64, 100, 127]
 INTERESTING16 = [0, 128, 255, 256, 512, 1000, 1024, 4096, 32767, 65535]
@@ -173,19 +171,19 @@ class Corpus(object):
             elif cur_exec_time * 0.75 > avg_exec_time:
                 perf_score = 70
             elif cur_exec_time * 4 < avg_exec_time:
-                perf_score = 300
+                perf_score = 450
             elif cur_exec_time * 3 < avg_exec_time:
-                perf_score = 200
+                perf_score = 300
             elif cur_exec_time * 2 < avg_exec_time:
-                perf_score = 150
+                perf_score = 225
 
             # Adjust score via coverage
             if cur_coverage * 0.3 > avg_coverage:
-                perf_score *= 3
+                perf_score *= 4
             elif cur_coverage * 0.5 > avg_coverage:
-                perf_score *= 2 
+                perf_score *= 3 
             elif cur_coverage * 0.75 > avg_coverage:
-                perf_score *= 1.5
+                perf_score *= 2.5
             elif cur_coverage * 3 < avg_coverage:
                 perf_score * 0.25
             elif cur_coverage * 2 < avg_coverage:
@@ -194,7 +192,18 @@ class Corpus(object):
                 perf_score = 0.75
 
             # TODO handicap
-            perf_score *= 2
+            perf_score *= 1.5
+
+            if self._select_count[idx] < 2:
+                perf_score *= 3
+            elif self._select_count[idx] < 10:
+                perf_score *= 2
+            elif self._select_count[idx] < 20:
+                perf_score *= 1
+            elif self._select_count[idx] < 30:
+                perf_score *= 0.8
+            else:
+                perf_score *= 0.5
 
             # Adjust score via input depth
             if self._depth[idx] < 3:

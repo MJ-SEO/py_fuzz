@@ -1,5 +1,4 @@
 import collections
-from itertools import count
 import sys
 
 prev_line = 0
